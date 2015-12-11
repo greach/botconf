@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GGX</string>
+    <string name="hello">Groovy And Android :)</string>
+    <string name="about">About</string>
+    <string name="about_credits">Check http://www.groovy-lang.org</string>
+    <string name="about_descrip">This is an Android app written in Groovy</string>
+
+
+    <string name="agenda_filter_congress">Congress</string>
+    <string name="agenda_filter_track">Track</string>
+    <string name="agenda_filter_tag">Tag</string>
+    <string name="filter">Filter</string>
+    <string name="slides">Slides</string>
+    <string name="video">Video</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="tab_talks">Talks</string>
+    <string name="tab_favourites">Favourites</string>
+
+    <string name="snackbar_loading_agenda">Loading Programme</string>
+
+    <string name="snackbar_programme_updated">Programme Updated</string>
+
+    <string name="add_to_favourites">Add to favourites</string>
+
+    <string name="remove_from_favourites">Remove from favourites</string>
+
+
+</resources>

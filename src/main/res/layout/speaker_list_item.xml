@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainbackground"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <View
+        android:id="@+id/speakerSeparatorView"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        />
+
+    <TextView
+        android:id="@+id/speakerNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Craig Federighi"
+        android:textColor="@color/maintextcolor"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:layout_below="@id/speakerSeparatorView"/>
+
+
+    <ImageView
+        android:id="@+id/speakerImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/speakerNameTextView"/>
+
+    <TextView
+        android:id="@+id/speakerBioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Craig Federighi is Apple's senior vice president of Software Engineering, reporting to CEO Tim Cook. Craig oversees the development of iOS, OS X and Apple's common operating system engineering teams. His teams are responsible for delivering the software at the heart of Apple's innovative products, including the user interface, applications and frameworks."
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textColor="@color/maintextcolor"
+        android:layout_alignTop="@id/speakerImageView"
+        android:layout_toRightOf="@id/speakerImageView"/>
+</RelativeLayout>

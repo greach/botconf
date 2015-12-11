@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainbackground"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Swift Lab"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:textColor="@color/maintextcolor"
+        />
+
+    <TextView
+        android:id="@+id/tagsTextView"
+        android:layout_below="@id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Developer tools"
+        android:textSize="@dimen/abc_text_size_subhead_material"
+        android:textColor="@color/colorAccent"
+        />
+
+
+        <TextView
+            android:id="@+id/trackTextView"
+            android:layout_below="@id/tagsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Track 1"
+            android:textSize="@dimen/abc_text_size_subhead_material"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/maintextcolor"/>
+
+        <TextView
+            android:id="@+id/fullDateTextView"
+            android:layout_alignBaseline="@id/trackTextView"
+            android:layout_toRightOf="@id/trackTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Tuesday, 9 June, 09:00 - 13:00"
+            android:textSize="@dimen/abc_text_size_subhead_material"
+            android:textColor="@color/secondarytextcolor" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_below="@id/trackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Join Apple engineering teams as they answer your wquestions about Swift. Learn how you can use Swift in your apps. Bring your code and your questions"
+        android:textSize="@dimen/abc_text_size_body_1_material"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textColor="@color/maintextcolor"
+        />
+
+    <Button
+        android:id="@+id/favouriteButton"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_favourites"
+        android:textColor="@color/linkcolor"
+        android:background="@android:color/transparent"
+        android:gravity="left|center"
+        />
+
+    <Button
+        android:id="@+id/slidesButton"
+        android:layout_below="@id/favouriteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/slides"
+        android:textColor="@color/linkcolor"
+        android:background="@android:color/transparent"
+        android:gravity="left|center"
+        />
+
+    <Button
+        android:id="@+id/videoButton"
+        android:layout_below="@id/slidesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/video"
+        android:textColor="@color/linkcolor"
+        android:background="@android:color/transparent"
+        android:gravity="left|center"/>
+
+
+</RelativeLayout>

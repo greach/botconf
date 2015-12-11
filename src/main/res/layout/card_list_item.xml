@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainbackground">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/activity_vertical_margin">
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_centerHorizontal="true"
+                tools:text="Keynote"
+                android:textSize="@dimen/abc_text_size_subhead_material"
+                android:textColor="@color/maintextcolor"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+                <TextView
+                    android:id="@+id/timeIntervalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="10:00 - 12:00"
+
+                    android:paddingLeft="@dimen/activity_vertical_margin"
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:textColor="@color/secondarytextcolor"
+                    />
+
+                <TextView
+                    android:id="@+id/trackLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="- Presidio"
+                    android:layout_alignBaseline="@id/timeIntervalLabel"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:textColor="@color/secondarytextcolor"/>
+
+                <TextView
+                    android:id="@+id/tagsTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Workshop"
+                    android:gravity="right|center"
+                    android:layout_alignBaseline="@id/timeIntervalLabel"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+
+            <View
+
+                android:id="@+id/bottomBorderView"
+                android:layout_below="@id/nameLabel"
+
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+
+
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

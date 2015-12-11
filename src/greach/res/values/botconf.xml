@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="botconf_wordpress_url">http://greach.botconf.com</string>
+    <string name="botconf_date_format">yyyy/MM/dd HH:mm</string>
+    <string name="botconf_compact_date_format">yyyy/MM/dd</string>
+</resources>
