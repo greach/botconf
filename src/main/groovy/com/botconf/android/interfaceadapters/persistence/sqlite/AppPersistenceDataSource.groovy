@@ -3,7 +3,6 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
-import com.botconf.R
 import com.botconf.entities.*
 import com.botconf.entities.interfaces.*
 import groovy.transform.CompileStatic
@@ -20,7 +19,7 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
     Context context
 
     String getDateFormat() {
-        context.getResources().getString(R.string.botconf_date_format)
+        "yyyy/MM/dd HH:mm"
     }
 
     AppPersistenceDataSource(Context context) {

@@ -12,7 +12,7 @@ import groovy.transform.TypeCheckingMode
 class AgendaUseCase {
 
     Context context
-    String dateFormat = 'yyyy/MM/dd'
+    String dateFormat = 'MM/dd/yyyy/'
 
     AgendaUseCase(Context context) {
         this.context = context
