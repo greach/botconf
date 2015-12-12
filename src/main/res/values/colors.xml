@@ -7,7 +7,7 @@
     <item name="maintextcolor" type="color">#000000</item>
     <item name="secondarytextcolor" type="color">#656565</item>
     <item name="secondarybackground" type="color">#f7f7f7</item>
-    <item name="linkcolor" type="color">#f2ab57</item>
+    <item name="linkcolor" type="color">#5854e0</item>
 
 
     <item name="snackbar_red" type="color">#fff44336</item>
