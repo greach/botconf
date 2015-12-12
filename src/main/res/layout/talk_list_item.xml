@@ -39,6 +39,7 @@
 
         <TextView
             android:id="@+id/fullDateTextView"
+            android:layout_below="@id/tagsTextView"
             android:layout_alignBaseline="@id/trackTextView"
             android:layout_toRightOf="@id/trackTextView"
             android:layout_width="wrap_content"

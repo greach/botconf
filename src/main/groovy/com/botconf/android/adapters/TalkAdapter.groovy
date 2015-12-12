@@ -165,7 +165,11 @@ class TalkAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             titleTextView.text = talk.name
             tagsTextView.text = talkUseCase.formatTalkTags(talk)
             descriptionTextView.text = talkUseCase.stripHTMLOffFrom(talk.about)
+
             trackTextView.text = talk.track
+            if(!talk.track) {
+                trackTextView.visibility = View.GONE
+            }
             fullDateTextView.text = talkUseCase.formatTalkStartAndEndDates(talk)
 
             if(videoButton) {
