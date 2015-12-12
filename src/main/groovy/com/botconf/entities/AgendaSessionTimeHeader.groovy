@@ -1,12 +1,13 @@
 package com.botconf.entities
-
 import com.botconf.entities.interfaces.IAgendaSession
 import groovy.time.TimeCategory
-import groovy.transform.Canonical
 import groovy.transform.CompileStatic
+import groovy.transform.EqualsAndHashCode
+import groovy.transform.ToString
 import groovy.transform.TypeCheckingMode
 
-@Canonical
+@ToString
+@EqualsAndHashCode(excludes = ['dateFormat'])
 @CompileStatic
 class AgendaSessionTimeHeader implements IAgendaSession {
 

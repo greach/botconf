@@ -16,9 +16,7 @@ class AgendaUseCase {
 
     AgendaUseCase(Context context) {
         this.context = context
-        if(context) {
-            dateFormat = context.getResources().getString(R.string.botconf_compact_date_format)
-        }
+        dateFormat = context.getResources().getString(R.string.botconf_compact_date_format)
     }
 
     List<IAgendaSession> buildAgendaWithAnchorDate(List<ITalkCard> talks, Date anchorDate) {
