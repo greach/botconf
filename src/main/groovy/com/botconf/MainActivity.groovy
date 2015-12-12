@@ -174,7 +174,7 @@ class MainActivity extends AppCompatActivity implements TraitAppInfo {
                     return context.getResources().getString(R.string.tab_favourites)
 
                 case 2:
-                    return context.getResources().getString(R.string.tab_twitter)
+                    return context.getResources().getString(R.string.botconf_twitter_hashtag)
             }
         }
     }
