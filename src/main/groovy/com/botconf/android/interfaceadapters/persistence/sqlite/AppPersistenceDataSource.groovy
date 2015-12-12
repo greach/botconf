@@ -78,8 +78,8 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
             ${COL_SPEAKER_IMAGE_URL},
             ${COL_SPEAKER_ABOUT}
         FROM ${TABLE_TALK}
-        INNER JOIN ${TABLE_TALKSPEAKER} ON ${TABLE_TALKSPEAKER}.${COL_TALKSPEAKER_TALK_FOREIGN_KEY} = ${TABLE_TALK}.${COL_TALK_PRIMARY_KEY}
-        INNER JOIN ${TABLE_SPEAKER} ON ${TABLE_SPEAKER}.${COL_SPEAKER_PRIMARY_KEY} = ${TABLE_TALKSPEAKER}.${COL_TALKSPEAKER_SPEAKER_FOREIGN_KEY}
+        LEFT OUTER JOIN ${TABLE_TALKSPEAKER} ON ${TABLE_TALKSPEAKER}.${COL_TALKSPEAKER_TALK_FOREIGN_KEY} = ${TABLE_TALK}.${COL_TALK_PRIMARY_KEY}
+        LEFT OUTER JOIN ${TABLE_SPEAKER} ON ${TABLE_SPEAKER}.${COL_SPEAKER_PRIMARY_KEY} = ${TABLE_TALKSPEAKER}.${COL_TALKSPEAKER_SPEAKER_FOREIGN_KEY}
         WHERE ${COL_TALK_PRIMARY_KEY} = ?
 """
         String[] args = [String.valueOf(primaryKey)] as String[]
@@ -92,7 +92,11 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
                 if(!talk) {
                     talk = createTalkFromCursor(c)
                 }
-                speakers << createSpeakerFromCursor(c)
+                ISpeaker speaker = createSpeakerFromCursor(c)
+                if(speaker) {
+                    speakers << speaker
+                }
+
                 if (!c.moveToNext()) {
                     break
                 }
@@ -444,7 +448,7 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
             imageUrl = getStringFromColumnName(c, COL_SPEAKER_IMAGE_URL)
             about = getStringFromColumnName(c, COL_SPEAKER_ABOUT)
         }
-        speaker
+        return (speaker.primaryKey) ? speaker : null
     }
 
     void populateTalk(Cursor c, AbstractTalk talk) {
@@ -470,7 +474,7 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
             videoUrl = getStringFromColumnName(c, COL_TALK_VIDEO_URL)
             favourite = getBooleanFromColumnName(c,COL_TALK_FAVOURITE)
         }
-        talk
+        return (talk.primaryKey) ? talk : null
     }
 
     List<String> tagsFromCursor(Cursor c) {
@@ -482,7 +486,7 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
 
         TalkCard talk = new TalkCard()
         populateTalk(c,talk)
-        talk
+        return (talk.primaryKey) ? talk : null
     }
 
     ContentValues contentValuesFromConference(IConference conference) {

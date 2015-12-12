@@ -50,7 +50,7 @@
 
     <TextView
         android:id="@+id/descriptionTextView"
-        android:layout_below="@id/trackTextView"
+        android:layout_below="@id/fullDateTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Join Apple engineering teams as they answer your wquestions about Swift. Learn how you can use Swift in your apps. Bring your code and your questions"
