@@ -191,8 +191,6 @@ class MainActivity extends AppCompatActivity {
 
             localRepositoryUseCase.updateLocalRepositoryWithTalks(talks)
 
-            List<ITalkCard> talkCards = localRepositoryUseCase.fetchTalkCardsFromLocalRepository()
-
             refreshViewPager()
         }
     }
