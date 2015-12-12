@@ -1,5 +1,8 @@
 package com.botconf
+import android.content.ActivityNotFoundException
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
@@ -10,10 +13,14 @@ import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import android.telephony.TelephonyManager
+import android.text.Html
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.arasthel.swissknife.annotations.OnBackground
 import com.arasthel.swissknife.annotations.OnUIThread
+import com.botconf.android.TraitAppInfo
 import com.botconf.android.fragments.AllTalksFragment
 import com.botconf.android.fragments.FavouritesTalksFragment
 import com.botconf.android.fragments.IUpdatableFragment
@@ -30,7 +37,7 @@ import groovy.transform.CompileStatic
 import io.fabric.sdk.android.Fabric
 
 @CompileStatic
-class MainActivity extends AppCompatActivity {
+class MainActivity extends AppCompatActivity implements TraitAppInfo {
     static final String TAG = MainActivity.simpleName
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
@@ -80,12 +87,32 @@ class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.onClickListener = {
+            showEmailComposer()
+        }
         localRepositoryUseCase = new LocalRepositoryUseCase(this)
 
         int total = localRepositoryUseCase.countTalkCardsFromLocalRepository()
         if(!total) {
 
             refresh()
+        }
+    }
+
+    static final String recipientEmail = "me@sergiodelamo.com"
+
+    void showEmailComposer() {
+        String htmlBody = appAndDeviceHtml(getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager, getPackageManager(), getPackageName())
+        Intent i = new Intent(Intent.ACTION_SENDTO)
+        i.with {
+            setData(Uri.parse("mailto:" + recipientEmail))
+            putExtra(Intent.EXTRA_SUBJECT, R.string.email_subject)
+            putExtra(Intent.EXTRA_TEXT, Html.fromHtml(htmlBody))
+        }
+        try {
+            startActivity(i);
+        } catch (ActivityNotFoundException ex) {
+            showSnackBar(fab,R.string.snackbar_no_email_client_available, Snackbar.LENGTH_LONG,R.color.snackbar_red)
         }
     }
 
@@ -158,21 +185,19 @@ class MainActivity extends AppCompatActivity {
     }
 
     @OnUIThread
-    void showConferenceDataLoadedFeedback() {
-        Snackbar snackbar = Snackbar.make(fab, getResources().getString(R.string.snackbar_loading_agenda), Snackbar.LENGTH_LONG)
-        snackbar.with {
-            view.setBackgroundColor(R.color.snackbar_green)
-            show()
-        }
+    void showSnackBar(View v, int stringResource, int length, int colorResource) {
+        String message = getResources().getString(stringResource)
+        Snackbar snackbar = Snackbar.make(v,message,length)
+        snackbar.getView().setBackgroundColor(colorResource)
+        snackbar.show()
     }
 
-    @OnUIThread
+    void showConferenceDataLoadedFeedback() {
+        showSnackBar(fab,R.string.snackbar_loading_agenda, Snackbar.LENGTH_LONG,R.color.snackbar_green)
+    }
+
     void showConferenceDataLoadingFeedback() {
-        Snackbar snackbar = Snackbar.make(fab, getResources().getString(R.string.snackbar_loading_agenda), Snackbar.LENGTH_INDEFINITE)
-        snackbar.with {
-            view.setBackgroundColor(R.color.snackbar_blue)
-            show()
-        }
+        showSnackBar(fab,R.string.snackbar_loading_agenda, Snackbar.LENGTH_INDEFINITE,R.color.snackbar_blue)
 
     }
 
@@ -210,6 +235,5 @@ class MainActivity extends AppCompatActivity {
 
         super.onOptionsItemSelected(item)
     }
-
 
 }
