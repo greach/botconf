@@ -3,4 +3,5 @@
     <string name="botconf_wordpress_url">http://ggx.botconf.com</string>
     <string name="botconf_date_format">yyyy/MM/dd HH:mm</string>
     <string name="botconf_compact_date_format">yyyy/MM/dd</string>
+    <string name="botconf_twitter_hashtag">#ggx</string>
 </resources>

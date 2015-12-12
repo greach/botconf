@@ -10,7 +10,6 @@ import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import com.arasthel.swissknife.annotations.OnBackground
@@ -18,19 +17,26 @@ import com.arasthel.swissknife.annotations.OnUIThread
 import com.botconf.android.fragments.AllTalksFragment
 import com.botconf.android.fragments.FavouritesTalksFragment
 import com.botconf.android.fragments.IUpdatableFragment
+import com.botconf.android.fragments.TwitterHashTagFragment
 import com.botconf.android.usecases.RemoteRepositoryUseCase
 import com.botconf.entities.interfaces.IConference
 import com.botconf.entities.interfaces.ISpeaker
 import com.botconf.entities.interfaces.ITalk
 import com.botconf.entities.interfaces.ITalkCard
 import com.botconf.usecases.LocalRepositoryUseCase
+import com.crashlytics.android.Crashlytics
+import com.twitter.sdk.android.Twitter
+import com.twitter.sdk.android.core.TwitterAuthConfig
 import groovy.transform.CompileStatic
+import io.fabric.sdk.android.Fabric
 
 @CompileStatic
 class MainActivity extends AppCompatActivity {
     static final String TAG = MainActivity.simpleName
 
-
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = ""
+    private static final String TWITTER_SECRET = ""
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -50,11 +56,15 @@ class MainActivity extends AppCompatActivity {
     /**
      * The {@link android.support.v4.view.ViewPager} that will host the section contents.
      */
-    private ViewPager mViewPager;
+    private ViewPager mViewPager
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET)
+        Fabric.with(this, new Crashlytics(),new Twitter(authConfig))
+
+
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -83,7 +93,6 @@ class MainActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume()
-        Log.e(TAG, "On resume")
         refreshViewPager()
     }
 
@@ -100,6 +109,12 @@ class MainActivity extends AppCompatActivity {
             this.context = context
         }
 
+
+        @Override
+        int getCount() {
+            3
+        }
+
         @Override
         Fragment getItem(int position) {
             switch (position) {
@@ -107,24 +122,20 @@ class MainActivity extends AppCompatActivity {
                     return new AllTalksFragment()
                 case 1:
                     return new FavouritesTalksFragment()
+                case 2:
+                    return new TwitterHashTagFragment()
             }
         }
 
         @Override
         public int getItemPosition(Object object) {
-            Log.e(TAG, "inside getItemPosition")
             if(object in IUpdatableFragment) {
                 IUpdatableFragment f = (IUpdatableFragment ) object
-                if (f != null) {
+                if (f) {
                     f.refreshUi()
                 }
             }
             return super.getItemPosition(object);
-        }
-
-        @Override
-        int getCount() {
-            2
         }
 
         @Override
@@ -133,9 +144,11 @@ class MainActivity extends AppCompatActivity {
                 case 0:
                    return context.getResources().getString(R.string.tab_talks)
 
-
                 case 1:
                     return context.getResources().getString(R.string.tab_favourites)
+
+                case 2:
+                    return context.getResources().getString(R.string.tab_twitter)
             }
         }
     }
