@@ -65,7 +65,7 @@ class FavouritesTalksFragment extends Fragment implements IUpdatableFragment, IC
 
     @Override
     void cardClicked(ITalkCard card) {
-        if(card) {
+        if(card && agendaUseCase.shouldShowTalk(card)) {
             Intent i = new Intent(getActivity(), TalkActivity)
             i.putExtra(TalkActivity.EXTRA_PRIMARY_KEY, card.getPrimaryKey())
             startActivity(i)

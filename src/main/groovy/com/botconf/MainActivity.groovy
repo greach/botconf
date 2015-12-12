@@ -22,7 +22,6 @@ import com.botconf.android.usecases.RemoteRepositoryUseCase
 import com.botconf.entities.interfaces.IConference
 import com.botconf.entities.interfaces.ISpeaker
 import com.botconf.entities.interfaces.ITalk
-import com.botconf.entities.interfaces.ITalkCard
 import com.botconf.usecases.LocalRepositoryUseCase
 import com.crashlytics.android.Crashlytics
 import com.twitter.sdk.android.Twitter

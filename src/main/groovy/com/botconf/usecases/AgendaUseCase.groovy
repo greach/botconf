@@ -25,18 +25,22 @@ class AgendaUseCase {
         def agenda = []
 
         talks.sort { a, b ->
-            boolean chronologicalOrder = a.startDate.after(anchorDate) && b.startDate.after(anchorDate)
-            int compareTo = (chronologicalOrder) ? a.startDate <=> b.startDate : b.startDate <=> a.startDate
+            boolean chronologicalOrder = a.start.after(anchorDate) && b.start.after(anchorDate)
+            int compareTo = (chronologicalOrder) ? a.start <=> b.start : b.start <=> a.start
             (compareTo == 0) ? a.name <=> b.name : compareTo
         }
 
         for(ITalkCard talk in talks) {
 
-            def timeHeader = new AgendaSessionTimeHeader(sessionDate: talk.startDate,dateFormat: dateFormat)
-            if(!agenda.any { it == timeHeader }) {
+            def timeHeader = new AgendaSessionTimeHeader(sessionDate: talk.start,dateFormat: dateFormat)
+            boolean shouldShowTalk = shouldShowTalk(talk)
+            if(shouldShowTalk && !agenda.any { it == timeHeader }) {
                 agenda << timeHeader
             }
-            agenda << talk
+            if(shouldShowTalk || (!shouldShowTalk && talk.start.after(anchorDate))) {
+                agenda << talk
+            }
+
         }
 
         agenda
@@ -53,5 +57,16 @@ class AgendaUseCase {
 
     List<IAgendaSession> buildAgenda(List<ITalkCard> talks) {
         buildAgendaWithAnchorDate(talks, agendaAnchorDate())
+    }
+
+    static boolean shouldShowTalk(ITalkCard talk) {
+
+
+        if(!talk.tags && !talk.track) {
+            return false
+        }
+
+
+        true
     }
 }

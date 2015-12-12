@@ -7,9 +7,10 @@ interface ITalkCard {
 
     Long getPrimaryKey()
     String getName()
-    Date getStartDate()
-    Date getEndDate()
-    String getTrackName()
+    String getSpeakerName()
+    Date getStart()
+    Date getEnd()
+    String getTrack()
     List<String> getTags()
 
 }

@@ -27,8 +27,8 @@ class WPAPIFetcher {
 
     }
 
-    String linkFor(String baseUrl, String type) {
-        "${baseUrl}/wp-json/posts?type=${type}"
+    String linkFor(String baseUrl, String type, int posts_per_page = 100) {
+        "${baseUrl}/wp-json/posts?type=${type}&filter[posts_per_page]=${posts_per_page}"
     }
 
     void fetchPostLink(Context ctx, String link, Closure completion) {

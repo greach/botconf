@@ -8,6 +8,7 @@ import android.widget.TextView
 import com.botconf.R
 import com.botconf.entities.interfaces.IAgendaSession
 import com.botconf.entities.interfaces.ITalkCard
+import com.botconf.usecases.AgendaUseCase
 import groovy.transform.CompileStatic
 
 @CompileStatic
@@ -58,6 +59,7 @@ class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder> {
 
     class CardViewHolder extends RecyclerView.ViewHolder  implements View.OnClickListener {
         TextView nameLabel
+        TextView speakersNameLabel
         TextView timeIntervalLabel
         TextView trackLabel
         TextView tagsTextView
@@ -68,6 +70,7 @@ class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder> {
         CardViewHolder(View itemView) {
             super(itemView)
             nameLabel = (TextView) itemView.findViewById(R.id.nameLabel)
+            speakersNameLabel = (TextView) itemView.findViewById(R.id.speakersNameLabel)
             timeIntervalLabel = (TextView) itemView.findViewById(R.id.timeIntervalLabel)
             trackLabel = (TextView) itemView.findViewById(R.id.trackLabel)
             tagsTextView = (TextView) itemView.findViewById(R.id.tagsTextView)
@@ -81,9 +84,20 @@ class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder> {
             this.agendaSession = agendaSession
             nameLabel?.text = agendaSession.name
 
-            if(agendaSession in ITalkCard) {
 
+            if(agendaSession in ITalkCard) {
                 ITalkCard card = (ITalkCard)this.agendaSession
+                if(!AgendaUseCase.shouldShowTalk(card)) {
+                    nameLabel.textColor = context.getResources().getColor(R.color.secondarytextcolor)
+                } else {
+                    nameLabel.textColor = context.getResources().getColor(R.color.maintextcolor)
+                }
+
+                if(speakersNameLabel) {
+                    speakersNameLabel.text = card.speakerName
+                }
+
+
                 if(card.tags) {
                     tagsTextView.text = card.tags.join(' - ').toUpperCase()
                     tagsTextView.visibility = View.VISIBLE
@@ -92,8 +106,8 @@ class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder> {
                 }
 
 
-                timeIntervalLabel?.text = "${card.startDate?.format( 'HH:mm')} - ${card.endDate?.format( 'HH:mm')}"
-                trackLabel?.text = card.trackName
+                timeIntervalLabel?.text = "${card.start?.format( 'HH:mm')} - ${card.end?.format( 'HH:mm')}"
+                trackLabel?.text = card.track
             }
             configureBottomBorderVisibility(nextRowType)
         }

@@ -1,5 +1,4 @@
 package com.botconf.usecases
-
 import android.content.Context
 import com.botconf.R
 import com.botconf.entities.interfaces.ITalk
@@ -26,11 +25,11 @@ class TalkUseCase {
     }
 
     String formatTalkStartAndEndDates(ITalk talk) {
-        "${talk.start.format(getDateFormat())} - ${talk.end.format(DATE_HOUR_MINUTES_FORMAT)}"
+        "${talk?.start?.format(getDateFormat())} - ${talk?.end?.format(DATE_HOUR_MINUTES_FORMAT)}"
     }
 
     String formatTalkTags(ITalk talk) {
-        talk.tags.join(' - ')
+        talk?.tags?.join(' - ')
     }
 
     String stripHTMLOffFrom(String about) {
@@ -44,4 +43,5 @@ class TalkUseCase {
         }
         about
     }
+
 }

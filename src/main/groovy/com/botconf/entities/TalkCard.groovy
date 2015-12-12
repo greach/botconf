@@ -6,12 +6,8 @@ import groovy.transform.CompileStatic
 
 @Canonical
 @CompileStatic
-class TalkCard implements ITalkCard, IAgendaSession {
+class TalkCard extends AbstractTalk implements ITalkCard, IAgendaSession {
 
-    Long primaryKey
-    String name
-    Date startDate
-    Date endDate
-    String trackName
-    List<String> tags
+    String speakerName
+
 }

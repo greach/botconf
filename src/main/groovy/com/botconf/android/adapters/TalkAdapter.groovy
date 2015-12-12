@@ -70,14 +70,14 @@ class TalkAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             (holder as TalkViewHolder).bindTalk(delegate, talk)
 
         } else if(holder in SpeakerViewHolder) {
-            ISpeaker speaker = talk.speakers[position - 1]
+            ISpeaker speaker = talk?.speakers[position - 1]
             (holder as SpeakerViewHolder).bindSpeaker(speaker)
         }
     }
 
     @Override
     int getItemCount() {
-        1 + talk?.speakers?.size()
+        1 + (talk?.speakers?.size() ?: 0)
     }
 
     class SpeakerViewHolder extends RecyclerView.ViewHolder {
@@ -162,33 +162,33 @@ class TalkAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         void bindTalk(ITalkAdapterDelegate delegate, ITalk talk ) {
             this.talk = talk
 
-            titleTextView.text = talk.name
+            titleTextView.text = talk?.name
             tagsTextView.text = talkUseCase.formatTalkTags(talk)
-            descriptionTextView.text = talkUseCase.stripHTMLOffFrom(talk.about)
+            descriptionTextView.text = talkUseCase.stripHTMLOffFrom(talk?.about)
 
-            trackTextView.text = talk.track
-            if(!talk.track) {
+            trackTextView.text = talk?.track
+            if(!talk?.track) {
                 trackTextView.visibility = View.GONE
             }
             fullDateTextView.text = talkUseCase.formatTalkStartAndEndDates(talk)
 
             if(videoButton) {
-                videoButton.visibility = talk.videoUrl ? View.VISIBLE : View.GONE
-                if(talk.videoUrl) {
+                videoButton.visibility = talk?.videoUrl ? View.VISIBLE : View.GONE
+                if(talk?.videoUrl) {
                     videoButton.onClickListener = new VideoButtonClickListener(delegate, talk.videoUrl)
                 }
             }
 
             if(slidesButton) {
-                slidesButton.visibility = talk.slidesUrl ? View.VISIBLE : View.GONE
-                if(talk.slidesUrl) {
+                slidesButton.visibility = talk?.slidesUrl ? View.VISIBLE : View.GONE
+                if(talk?.slidesUrl) {
                     slidesButton.onClickListener = new SlidesButtonClickListener(delegate, talk.slidesUrl)
                 }
             }
 
             if(favouriteButton) {
-                favouriteButton?.text = context.getResources().getString((talk.favourite ? R.string.remove_from_favourites : R.string.add_to_favourites))
-                favouriteButton?.onClickListener = new FavouriteButtonClickListener(delegate, !talk.favourite)
+                favouriteButton?.text = context.getResources().getString((talk?.favourite ? R.string.remove_from_favorites : R.string.add_to_favorites))
+                favouriteButton?.onClickListener = new FavouriteButtonClickListener(delegate, !talk?.favourite)
             }
 
         }

@@ -7,17 +7,12 @@ import groovy.transform.CompileStatic
 
 @Canonical
 @CompileStatic
-class Talk implements ITalk {
-    Long primaryKey
-    String name
+class Talk extends AbstractTalk implements ITalk {
+
     String about
     boolean favourite
-    Date start
-    Date end
     String slidesUrl
     String videoUrl
-    List<String> tags = []
-    String track
     List<ISpeaker> speakers
 
 

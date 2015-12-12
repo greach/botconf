@@ -3,12 +3,8 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
-import android.util.Log
 import com.botconf.R
-import com.botconf.entities.Conference
-import com.botconf.entities.Speaker
-import com.botconf.entities.Talk
-import com.botconf.entities.TalkCard
+import com.botconf.entities.*
 import com.botconf.entities.interfaces.*
 import groovy.transform.CompileStatic
 
@@ -268,6 +264,34 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
         findAllTalkCardsWithWherClause(" WHERE ${COL_TALK_FAVOURITE} = 1  ")
     }
 
+    String speakerTalkPrimaryKeyQuery() {
+        """
+            SELECT
+                ${COL_TALK_PRIMARY_KEY},
+                ${COL_SPEAKER_NAME}
+            FROM ${TABLE_TALK}
+            INNER JOIN ${TABLE_TALKSPEAKER} ON ${TABLE_TALKSPEAKER}.${COL_TALKSPEAKER_TALK_FOREIGN_KEY} = ${TABLE_TALK}.${COL_TALK_PRIMARY_KEY}
+            INNER JOIN ${TABLE_SPEAKER} ON ${TABLE_SPEAKER}.${COL_SPEAKER_PRIMARY_KEY} = ${TABLE_TALKSPEAKER}.${COL_TALKSPEAKER_SPEAKER_FOREIGN_KEY}
+            WHERE ${COL_TALK_PRIMARY_KEY} = ?
+        """
+    }
+
+    String speakerNamesForTalkWithDB(Long talkPrimaryKey, SQLiteDatabase db) {
+        Cursor c = db.rawQuery(speakerTalkPrimaryKeyQuery(), [talkPrimaryKey] as String[]);
+        def speakerNames = [] as Set
+
+        if (c.moveToFirst()) {
+            for (; ;) {
+                speakerNames << getStringFromColumnName(c, COL_SPEAKER_NAME)
+                if (!c.moveToNext()) {
+                    break
+                }
+            }
+        }
+
+        speakerNames.join(', ')
+    }
+
     List<ITalkCard> findAllTalkCardsWithWherClause(String whereClause = null) {
         SQLiteDatabase db = getReadableDatabase()
 
@@ -282,23 +306,27 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
         FROM ${TABLE_TALK}
         ${whereClause ?: ''}
 """
-
         Cursor c = db.rawQuery(sqlString, null);
         List<ITalkCard> talks = []
+
         if (c.moveToFirst()) {
             for (; ;) {
-                talks << createTalkCardFromCursor(c)
+                ITalkCard card = createTalkCardFromCursor(c)
+                if(card in TalkCard) {
+                    ((TalkCard)card).speakerName = speakerNamesForTalkWithDB(card.primaryKey, db)
+                }
+                talks << card
+
                 if (!c.moveToNext()) {
                     break
                 }
             }
         }
-        c.close();
-        db.close();
 
+        c.close()
+        db.close()
         talks
     }
-
 
     long insertSpeakerWithDB(ISpeaker speaker, SQLiteDatabase db) {
         ContentValues cv = contentValuesFromSpeaker(speaker)
@@ -419,27 +447,29 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
         speaker
     }
 
-    ITalk createTalkFromCursor(Cursor c) {
-
-        Talk talk = new Talk()
-
+    void populateTalk(Cursor c, AbstractTalk talk) {
         String startStr = getStringFromColumnName(c, COL_TALK_START)
         String endStr = getStringFromColumnName(c, COL_TALK_END)
         talk.with {
             primaryKey = getLongFromColumnName(c, COL_TALK_PRIMARY_KEY)
-            start = new Date().parse(getDateFormat(),startStr)
-            end = new Date().parse(getDateFormat(),endStr)
+            start = new Date().parse(getDateFormat(), startStr)
+            end = new Date().parse(getDateFormat(), endStr)
             name = getStringFromColumnName(c, COL_TALK_NAME)
-            about = getStringFromColumnName(c, COL_TALK_ABOUT)
             track = getStringFromColumnName(c, COL_TALK_TRACK)
+        }
+        talk.tags = tagsFromCursor(c)
+    }
+
+    ITalk createTalkFromCursor(Cursor c) {
+
+        Talk talk = new Talk()
+        populateTalk(c,talk)
+        talk.with {
+            about = getStringFromColumnName(c, COL_TALK_ABOUT)
             slidesUrl = getStringFromColumnName(c, COL_TALK_SLIDES_URL)
             videoUrl = getStringFromColumnName(c, COL_TALK_VIDEO_URL)
             favourite = getBooleanFromColumnName(c,COL_TALK_FAVOURITE)
         }
-
-
-        String tags = getStringFromColumnName(c, COL_TALK_TAGS)
-        talk.tags = tagsFromCursor(c)
         talk
     }
 
@@ -450,19 +480,9 @@ class AppPersistenceDataSource extends AbstractDataSource implements IAppPersist
 
     ITalkCard createTalkCardFromCursor(Cursor c) {
 
-        String startStr = getStringFromColumnName(c, COL_TALK_START)
-        String endStr = getStringFromColumnName(c, COL_TALK_END)
-
-        TalkCard talkcard = new TalkCard()
-        talkcard.with {
-            startDate = new Date().parse(getDateFormat(),startStr)
-            endDate = new Date().parse(getDateFormat(),endStr)
-            primaryKey = getLongFromColumnName(c, COL_TALK_PRIMARY_KEY)
-            name = getStringFromColumnName(c, COL_TALK_NAME)
-            trackName = getStringFromColumnName(c, COL_TALK_TRACK)
-        }
-        talkcard.tags = tagsFromCursor(c)
-        talkcard
+        TalkCard talk = new TalkCard()
+        populateTalk(c,talk)
+        talk
     }
 
     ContentValues contentValuesFromConference(IConference conference) {
