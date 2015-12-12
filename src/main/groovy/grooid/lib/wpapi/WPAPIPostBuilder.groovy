@@ -1,6 +1,5 @@
 package grooid.lib.wpapi
 
-import android.util.Log
 import groovy.json.JsonSlurper
 import groovy.transform.CompileStatic
 
@@ -170,9 +169,6 @@ class WPAPIPostBuilder {
             if (dict[kPostTitle]) {
                 title = dict[kPostTitle]
             }
-            if(el.title) {
-                Log.e(TAG, el.title)
-            }
             el.title = HTMLEntities.replaceHTMLEntities(title)
 
             if (dict[kStatus]) {
@@ -192,12 +188,14 @@ class WPAPIPostBuilder {
             // Author
 
 
+            def content
             if (dict[kContent]) {
-                el.content = dict[kContent]
+                content = dict[kContent]
             }
             if (dict[kPostContent]) {
-                el.content = dict[kPostContent]
+                content = dict[kPostContent]
             }
+            el.content = HTMLEntities.replaceHTMLEntities(content as String)
 
             if(dict[kParent] in Integer) {
                 el.parent = dict[kParent] as Integer
@@ -217,12 +215,16 @@ class WPAPIPostBuilder {
 
             el.guid = dict[kGuid]
 
+            def excerpt
             if(dict[kExcerpt]) {
-                el.excerpt = dict[kExcerpt]
+                excerpt = dict[kExcerpt]
+
             }
             if(dict[kPostExcerpt]) {
-                el.excerpt = dict[kPostExcerpt]
+                excerpt = dict[kPostExcerpt]
             }
+
+            el.excerpt = HTMLEntities.replaceHTMLEntities(excerpt as String)
 
             if(dict[kTerm] in Map) {
                 el.terms = WPAPITermBuilder.termsWithMap((Map)dict[kTerm])
