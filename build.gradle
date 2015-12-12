@@ -23,7 +23,7 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 22
-        versionCode 3
+        versionCode 5
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -52,6 +52,15 @@ android {
         ggx {
             applicationId "com.botconf.ggx"
             versionName = "1.0-ggx"
+        }
+    }
+
+    android.applicationVariants.all {  v ->
+        if (v.buildType.name == "release") {
+            v.outputs.each { output ->
+                output.outputFile = new File(output.outputFile.parent,
+                        output.outputFile.name.replace(".apk", "${defaultConfig.versionCode}_${defaultConfig.versionName}.apk"))
+            }
         }
     }
 
