@@ -1,8 +1,10 @@
 package com.botconf
-import android.app.Activity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.Menu
+import android.view.MenuItem
 import com.botconf.android.adapters.ITalkAdapterDelegate
 import com.botconf.android.adapters.TalkAdapter
 import com.botconf.entities.interfaces.ITalk
@@ -12,7 +14,7 @@ import com.botconf.usecases.TalkUseCase
 import groovy.transform.CompileStatic
 
 @CompileStatic
-class TalkActivity extends Activity implements  ITalkAdapterDelegate {
+class TalkActivity extends AppCompatActivity implements  ITalkAdapterDelegate {
     static final String TAG = TalkActivity.simpleName
     static final String EXTRA_PRIMARY_KEY = "talk_primary_key"
 
@@ -49,6 +51,7 @@ class TalkActivity extends Activity implements  ITalkAdapterDelegate {
     }
 
     void refreshUi() {
+        invalidateOptionsMenu()
         talk = localRepositoryUseCase.findTalkByPrimaryKey(talkPrimaryKey)
         adapter.talk = talk
     }
@@ -71,5 +74,41 @@ class TalkActivity extends Activity implements  ITalkAdapterDelegate {
 
     void openVideo(String videoUrl) {
         ContactUseCase.startBrowserIntent(this, videoUrl)
+    }
+
+    @Override
+    boolean onCreateOptionsMenu(Menu menu) {
+
+        menuInflater.inflate(R.menu.menu_talk, menu)
+
+        true
+    }
+
+    @Override
+    boolean onPrepareOptionsMenu(Menu menu) {
+
+        MenuItem menuItem = menu.findItem(R.id.action_add_to_favorites)
+        if(menuItem) {
+            menuItem.setVisible((talk?.favourite) ? false : true)
+        }
+        menuItem = menu.findItem(R.id.action_remove_from_favorites)
+        if(menuItem) {
+            menuItem.setVisible((talk?.favourite) ? true : false)
+        }
+        true
+    }
+
+    @Override
+    boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.itemId
+
+        if(id == R.id.action_add_to_favorites) {
+            tappedFavouriteTalk(true)
+
+        } else if(id == R.id.action_remove_from_favorites) {
+            tappedFavouriteTalk(false)
+        }
+
+        super.onOptionsItemSelected(item)
     }
 }
