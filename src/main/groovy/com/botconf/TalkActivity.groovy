@@ -24,7 +24,7 @@ class TalkActivity extends AppCompatActivity implements TraitGoogleAnalytics,  I
     }
 
     String screenName() {
-        "Talk ${talk.name ?: ''}"
+        "Talk ${talk?.name ?: ''}"
     }
 
     static final String TAG = TalkActivity.simpleName
