@@ -9,7 +9,8 @@ import groovy.transform.CompileStatic
 
 @CompileStatic
 class AppPersistenceDatabaseHelper extends SQLiteOpenHelper {
-    static final String TAG = AppPersistenceDatabaseHelper.class.getSimpleName()
+
+    static final String TAG = AppPersistenceDatabaseHelper.simpleName
 
     static final String DB_NAME = 'botconf.sqlite'
 
