@@ -11,7 +11,7 @@ class WPAPIElement {
     WPAPIAuthor author
     String content
     Integer parent
-    String link;
+    String link
     Date date
     Date modified
     String format
