@@ -5,6 +5,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.Menu
 import android.view.MenuItem
+import com.botconf.android.TraitGoogleAnalytics
 import com.botconf.android.adapters.ITalkAdapterDelegate
 import com.botconf.android.adapters.TalkAdapter
 import com.botconf.entities.interfaces.ITalk
@@ -14,7 +15,18 @@ import com.botconf.usecases.TalkUseCase
 import groovy.transform.CompileStatic
 
 @CompileStatic
-class TalkActivity extends AppCompatActivity implements  ITalkAdapterDelegate {
+class TalkActivity extends AppCompatActivity implements TraitGoogleAnalytics,  ITalkAdapterDelegate {
+
+    @Override
+    public void onResume() {
+        super.onResume()
+        logScreen()
+    }
+
+    String screenName() {
+        "Talk ${talk.name ?: ''}"
+    }
+
     static final String TAG = TalkActivity.simpleName
     static final String EXTRA_PRIMARY_KEY = "talk_primary_key"
 

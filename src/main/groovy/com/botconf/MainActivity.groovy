@@ -21,6 +21,7 @@ import android.view.View
 import com.arasthel.swissknife.annotations.OnBackground
 import com.arasthel.swissknife.annotations.OnUIThread
 import com.botconf.android.TraitAppInfo
+import com.botconf.android.TraitGoogleAnalytics
 import com.botconf.android.fragments.AllTalksFragment
 import com.botconf.android.fragments.FavouritesTalksFragment
 import com.botconf.android.fragments.IUpdatableFragment
@@ -34,7 +35,13 @@ import groovy.transform.CompileStatic
 
 
 @CompileStatic
-class MainActivity extends AppCompatActivity implements TraitAppInfo {
+class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, TraitAppInfo {
+
+    @Override
+    String screenName() {
+        'All Talks'
+    }
+
     static final String TAG = MainActivity.simpleName
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
@@ -49,7 +56,7 @@ class MainActivity extends AppCompatActivity implements TraitAppInfo {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
-    private SectionsPagerAdapter mSectionsPagerAdapter
+    private SectionsPagerAdapter sectionsPagerAdapter
 
     RemoteRepositoryUseCase remoteRepositoryUseCase
     LocalRepositoryUseCase localRepositoryUseCase
@@ -59,7 +66,7 @@ class MainActivity extends AppCompatActivity implements TraitAppInfo {
     /**
      * The {@link android.support.v4.view.ViewPager} that will host the section contents.
      */
-    private ViewPager mViewPager
+    private ViewPager viewPager
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,18 +75,48 @@ class MainActivity extends AppCompatActivity implements TraitAppInfo {
 
         setContentView(R.layout.activity_main);
 
+        logScreen()
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(), getApplicationContext());
+        sectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(), getApplicationContext());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
+        viewPager = (ViewPager) findViewById(R.id.container);
+        viewPager.setAdapter(sectionsPagerAdapter);
+
+        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            void onPageSelected(int position) {
+
+                switch (position) {
+                    case 0:
+                        logScreen('All Talks')
+
+                    case 1:
+                        logScreen('Favorites')
+
+                    case 2:
+                        logScreen('Twitter')
+                }
+
+            }
+
+            @Override
+            void onPageScrollStateChanged(int state) {
+
+            }
+        })
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(mViewPager);
+        tabLayout.setupWithViewPager(viewPager);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.onClickListener = {
@@ -117,7 +154,7 @@ class MainActivity extends AppCompatActivity implements TraitAppInfo {
         refreshViewPager()
     }
 
-        /**
+/**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
@@ -148,8 +185,10 @@ class MainActivity extends AppCompatActivity implements TraitAppInfo {
             }
         }
 
+
+
         @Override
-        public int getItemPosition(Object object) {
+        int getItemPosition(Object object) {
             if(object in IUpdatableFragment) {
                 IUpdatableFragment f = (IUpdatableFragment ) object
                 if (f) {
@@ -176,7 +215,7 @@ class MainActivity extends AppCompatActivity implements TraitAppInfo {
 
     @OnUIThread
     void refreshViewPager() {
-        mSectionsPagerAdapter.notifyDataSetChanged()
+        sectionsPagerAdapter.notifyDataSetChanged()
     }
 
     @OnUIThread
