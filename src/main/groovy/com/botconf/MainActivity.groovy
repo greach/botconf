@@ -72,7 +72,6 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.activity_main);
 
         logScreen()
@@ -89,9 +88,7 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
 
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
-            void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
+            void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
 
             @Override
             void onPageSelected(int position) {
@@ -106,13 +103,10 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
                     case 2:
                         logScreen('Twitter')
                 }
-
             }
 
             @Override
-            void onPageScrollStateChanged(int state) {
-
-            }
+            void onPageScrollStateChanged(int state) {}
         })
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
