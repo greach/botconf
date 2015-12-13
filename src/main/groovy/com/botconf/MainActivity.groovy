@@ -30,11 +30,8 @@ import com.botconf.entities.interfaces.IConference
 import com.botconf.entities.interfaces.ISpeaker
 import com.botconf.entities.interfaces.ITalk
 import com.botconf.usecases.LocalRepositoryUseCase
-import com.crashlytics.android.Crashlytics
-import com.twitter.sdk.android.Twitter
-import com.twitter.sdk.android.core.TwitterAuthConfig
 import groovy.transform.CompileStatic
-import io.fabric.sdk.android.Fabric
+
 
 @CompileStatic
 class MainActivity extends AppCompatActivity implements TraitAppInfo {
@@ -67,8 +64,6 @@ class MainActivity extends AppCompatActivity implements TraitAppInfo {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET)
-        Fabric.with(this, new Crashlytics(),new Twitter(authConfig))
 
 
         setContentView(R.layout.activity_main);

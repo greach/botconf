@@ -27,8 +27,5 @@
             android:name="com.botconf.AgendaFilterActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="" />
     </application>
 </manifest>

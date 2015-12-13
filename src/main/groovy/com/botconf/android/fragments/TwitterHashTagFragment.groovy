@@ -5,10 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.botconf.R
-import com.twitter.sdk.android.tweetui.SearchTimeline
-import com.twitter.sdk.android.tweetui.TweetTimelineListAdapter
 import groovy.transform.CompileStatic
-
 @CompileStatic
 class TwitterHashTagFragment extends ListFragment {
 
@@ -20,13 +17,6 @@ class TwitterHashTagFragment extends ListFragment {
     void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        final SearchTimeline searchTimeline = new SearchTimeline.Builder()
-                .query(hashTag())
-                .build()
-        final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(getActivity())
-                .setTimeline(searchTimeline)
-                .build()
-        setListAdapter(adapter)
     }
 
     @Override
