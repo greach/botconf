@@ -1,5 +1,6 @@
 package com.botconf.android
 
+import android.content.Context
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.os.Build
@@ -11,8 +12,12 @@ import groovy.transform.CompileStatic
 @CompileStatic
 trait TraitAppInfo {
 
-    String appAndDeviceHtml(TelephonyManager telephonyManager, PackageManager packageManager, String packageName) {
-        appAndDeviceInfoHtml(appInfo(packageManager,packageName), deviceInfo(telephonyManager))
+    abstract PackageManager getPackageManager()
+    abstract String getPackageName()
+    abstract Object getSystemService(String name)
+
+    String appAndDeviceHtml() {
+        appAndDeviceInfoHtml(appInfo(getPackageManager(),getPackageName()), deviceInfo(getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager))
     }
 
     private String appAndDeviceInfoHtml(AppInfo appInfo, DeviceInfo deviceInfo){

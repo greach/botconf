@@ -13,7 +13,6 @@ import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.telephony.TelephonyManager
 import android.text.Html
 import android.view.Menu
 import android.view.MenuItem
@@ -26,13 +25,13 @@ import com.botconf.android.fragments.AllTalksFragment
 import com.botconf.android.fragments.FavouritesTalksFragment
 import com.botconf.android.fragments.IUpdatableFragment
 import com.botconf.android.fragments.TwitterHashTagFragment
+import com.botconf.android.usecases.IRemoteRepository
 import com.botconf.android.usecases.RemoteRepositoryUseCase
 import com.botconf.entities.interfaces.IConference
 import com.botconf.entities.interfaces.ISpeaker
 import com.botconf.entities.interfaces.ITalk
 import com.botconf.usecases.LocalRepositoryUseCase
 import groovy.transform.CompileStatic
-
 
 @CompileStatic
 class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, TraitAppInfo {
@@ -58,7 +57,7 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
      */
     private SectionsPagerAdapter sectionsPagerAdapter
 
-    RemoteRepositoryUseCase remoteRepositoryUseCase
+    IRemoteRepository remoteRepositoryUseCase
     LocalRepositoryUseCase localRepositoryUseCase
 
     FloatingActionButton fab
@@ -128,7 +127,7 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
     static final String recipientEmail = "me@sergiodelamo.com"
 
     void showEmailComposer() {
-        String htmlBody = appAndDeviceHtml(getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager, getPackageManager(), getPackageName())
+        String htmlBody = appAndDeviceHtml()
         Intent i = new Intent(Intent.ACTION_SENDTO)
         i.with {
             setData(Uri.parse("mailto:" + recipientEmail))
