@@ -8,7 +8,7 @@ import grooid.lib.wpapi.WPAPIUseCase
 import groovy.transform.CompileStatic
 
 @CompileStatic
-class RemoteRepositoryUseCase {
+class RemoteRepositoryUseCase implements IRemoteRepository {
 
     static final String SPEAKER_TYPE = 'speaker'
     static final String TALK_TYPE = 'talk'
