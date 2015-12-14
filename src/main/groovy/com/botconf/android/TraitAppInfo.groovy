@@ -17,7 +17,9 @@ trait TraitAppInfo {
     abstract Object getSystemService(String name)
 
     String appAndDeviceHtml() {
-        appAndDeviceInfoHtml(appInfo(getPackageManager(),getPackageName()), deviceInfo(getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager))
+        DeviceInfo deviceInfo = deviceInfo(getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager)
+        AppInfo appInfo = appInfo(getPackageManager(),getPackageName())
+        appAndDeviceInfoHtml(appInfo, deviceInfo)
     }
 
     private String appAndDeviceInfoHtml(AppInfo appInfo, DeviceInfo deviceInfo){
