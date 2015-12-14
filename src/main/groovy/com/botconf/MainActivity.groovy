@@ -69,13 +69,12 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_main);
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
         logScreen()
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar)
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
