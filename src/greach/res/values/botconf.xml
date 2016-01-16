@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="botconf_wordpress_url">http://greach.botconf.com</string>
-    <string name="botconf_date_format">yyyy/MM/dd HH:mm</string>
+    <string name="botconf_date_format">dd/MM/yyyy HH:mm</string>
     <string name="botconf_compact_date_format">dd/MM/yyyy</string>
-    <string name="botconf_twitter_hashtag">#greachconf</string>
+    <string name="botconf_twitter_hashtag">#greach</string>
 </resources>
