@@ -33,16 +33,13 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 22
-        versionCode 5
-        versionName "1.0"
+
 
         // Enabling multidex support.
         multiDexEnabled true
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
-
 
     packagingOptions {
         exclude 'LICENSE.txt' // Needed by Spock/Android
@@ -61,7 +58,7 @@ android {
             ext.enableCrashlytics = false
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
@@ -69,12 +66,14 @@ android {
     productFlavors {
         greach {
             applicationId "com.botconf.greach"
-            versionName = "1.0-greach"
+            versionName "1.0-greach"
+            versionCode 2
         }
 
         ggx {
             applicationId "com.botconf.ggx"
-            versionName = "1.0-ggx"
+            versionCode 5
+            versionName "1.0-ggx"
         }
     }
 
@@ -82,14 +81,11 @@ android {
         if (v.buildType.name == "release") {
             v.outputs.each { output ->
                 output.outputFile = new File(output.outputFile.parent,
-                        output.outputFile.name.replace(".apk", "${defaultConfig.versionCode}_${defaultConfig.versionName}.apk"))
+                        output.outputFile.name.replace(".apk", "${v.versionCode}_${v.versionName}.apk"))
             }
         }
     }
-
 }
-
-
 
 repositories {
     jcenter()
@@ -134,6 +130,10 @@ dependencies {
     compile('com.twitter.sdk.android:twitter:1.11.0@aar') {
         transitive = true;
     }
-    //Google Play Services
+
     compile 'com.google.android.gms:play-services-analytics:8.3.0'
+    //compile 'com.google.android.gms:play-services-maps:7.5.0'
+
+    compile 'com.googlecode.plist:dd-plist:1.16'
+
 }
