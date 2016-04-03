@@ -2,6 +2,7 @@ package grooid.lib.wpapi
 
 import android.content.Context
 import android.util.Log
+import com.android.volley.DefaultRetryPolicy
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.VolleyError
@@ -11,6 +12,8 @@ import groovy.transform.CompileStatic
 
 @CompileStatic
 class WPAPIFetcher {
+
+    private static final int TIMEOUT_MS = 20_000 // 20 seconds =  20 * 1000
 
     static final String TAG = WPAPIFetcher.class.getSimpleName()
 
@@ -46,7 +49,10 @@ class WPAPIFetcher {
                 Log.e(TAG, "On error:" + error)
             }
         })
-        // Add the request to the RequestQueue.
+        wpapiRequest.setRetryPolicy(new DefaultRetryPolicy(
+                TIMEOUT_MS,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT))
         VolleySingleton.getInstance(ctx).getRequestQueue().add(wpapiRequest)
     }
 }
