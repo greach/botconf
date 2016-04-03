@@ -6,12 +6,28 @@ import com.botconf.entities.interfaces.IAppPersistenceDataSource
 import com.botconf.entities.interfaces.IConference
 import com.botconf.entities.interfaces.ISpeaker
 import com.botconf.entities.interfaces.ITalkCard
+import groovy.time.TimeCategory
 import groovy.transform.CompileStatic
+import groovy.transform.TypeCheckingMode
 
 @CompileStatic
 class LocalRepositoryUseCase {
 
     IAppPersistenceDataSource dataSource
+
+    List<ITalkCard> fetchUpcomingTalkCardsFromLocalRepository() {
+        def aWeekAgoDate = aWeekAgo()
+        dataSource.findAllTalkCards().findAll { aWeekAgoDate.before(it.start) }
+    }
+
+    @CompileStatic(TypeCheckingMode.SKIP)
+    Date aWeekAgo() {
+        def currentDate = new Date()
+        use( TimeCategory ) {
+            currentDate = currentDate - 1.week
+        }
+        currentDate
+    }
 
     LocalRepositoryUseCase(Context ctx) {
         dataSource = new AppPersistenceDataSource(ctx)
