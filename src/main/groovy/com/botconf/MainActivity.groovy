@@ -25,6 +25,7 @@ import com.botconf.android.fragments.AllTalksFragment
 import com.botconf.android.fragments.FavouritesTalksFragment
 import com.botconf.android.fragments.IUpdatableFragment
 import com.botconf.android.fragments.TwitterHashTagFragment
+import com.botconf.android.fragments.UpcomingTalksFragment
 import com.botconf.android.usecases.IRemoteRepository
 import com.botconf.android.usecases.RemoteRepositoryUseCase
 import com.botconf.entities.interfaces.IConference
@@ -162,18 +163,20 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
 
         @Override
         int getCount() {
-            3
+            4
         }
 
         @Override
         Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new AllTalksFragment()
+                    return new UpcomingTalksFragment()
                 case 1:
                     return new FavouritesTalksFragment()
                 case 2:
                     return new TwitterHashTagFragment()
+                case 0:
+                    return new AllTalksFragment()
             }
         }
 
@@ -201,6 +204,9 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
 
                 case 2:
                     return context.getResources().getString(R.string.botconf_twitter_hashtag)
+
+                case 4:
+                    return context.getResources().getString(R.string.tab_talks_all)
             }
         }
     }

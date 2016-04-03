@@ -11,8 +11,9 @@
     <string name="video">Video</string>
     <string name="action_refresh">Refresh</string>
 
+    <string name="tab_talks_all">Archive</string>
     <string name="tab_talks">Talks</string>
-    <string name="tab_favourites">Favourites</string>
+    <string name="tab_favourites">Favs</string>
     <string name="tab_twitter">Twitter</string>
 
     <string name="snackbar_loading_agenda">Loading Programme</string>
