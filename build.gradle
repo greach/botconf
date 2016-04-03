@@ -9,7 +9,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
-        classpath 'org.codehaus.groovy:gradle-groovy-android-plugin:0.3.7'
+        classpath 'org.codehaus.groovy:gradle-groovy-android-plugin:0.3.8'
         classpath 'net.kaleidos.gradle.plugins:emerger:0.0.2' // Emerger
         classpath 'io.fabric.tools:gradle:1.+'
     }
@@ -46,6 +46,8 @@ android {
 
     packagingOptions {
         exclude 'LICENSE.txt' // Needed by Spock/Android
+        exclude 'META-INF/services/org.codehaus.groovy.transform.ASTTransformation'
+        exclude 'META-INF/services/org.codehaus.groovy.runtime.ExtensionModule'
     }
 
     lintOptions {
