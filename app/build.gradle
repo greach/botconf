@@ -1,0 +1,134 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url  "http://dl.bintray.com/kaleidos/maven" }
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'org.codehaus.groovy:gradle-groovy-android-plugin:0.3.10'
+        classpath 'net.kaleidos.gradle.plugins:emerger:0.0.2'
+        classpath 'io.fabric.tools:gradle:1.14.4'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'groovyx.grooid.groovy-android'
+apply plugin: 'net.kaleidos.gradle.plugins.emerger'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.softamo.botconf.greach"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // Disable fabric build ID generation for debug builds
+            ext.enableCrashlytics = false
+        }
+
+    }
+
+    productFlavors {
+        greach {
+            applicationId "com.botconf.greach"
+            versionName "1.0.1-greach"
+            versionCode 4
+            ext.enableCrashlytics = false
+        }
+
+        ggx {
+            applicationId "com.botconf.ggx"
+            versionCode 5
+            versionName "1.0-ggx"
+            ext.enableCrashlytics = false
+        }
+    }
+
+    android.applicationVariants.all {  v ->
+        if (v.buildType.name == "release") {
+            v.outputs.each { output ->
+                output.outputFile = new File(output.outputFile.parent,
+                        output.outputFile.name.replace(".apk", "${v.versionCode}_${v.versionName}.apk"))
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/org.codehaus.groovy.transform.ASTTransformation'
+        exclude 'META-INF/services/org.codehaus.groovy.runtime.ExtensionModule'
+        // Work around: http://stackoverflow.com/questions/20673625/android-gradle-plugin-0-7-0-duplicate-files-during-packaging-of-apk
+        exclude 'META-INF/groovy-release-info.properties'
+        exclude 'LICENSE.txt' // Needed by Spock/Android
+
+    }
+}
+androidGroovy {
+    options {
+        configure(groovyOptions) {
+            encoding = 'UTF-8'
+            forkOptions.jvmArgs = ['-noverify']
+            // maybe necessary if you use Google Play Services
+        }
+        sourceCompatibility = '1.7'
+        // as of 0.3.9 these are automatically set based off the android plugin's
+        targetCompatibility = '1.7'
+    }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'org.codehaus.groovy:groovy:2.4.6:grooid'
+    compile project (path : ':grooid-wpapi')
+
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+
+
+    // Getting rid of boiler plate code
+    compile 'com.arasthel:swissknife:1.4.0'
+
+    // Spock/Android
+    androidTestCompile "com.andrewreitz:spock-android:1.2.1"
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile('org.spockframework:spock-core:1.0-groovy-2.4') {
+        exclude group: 'org.codehaus.groovy'
+        exclude group: 'junit'
+    }
+    // Optional, needed for mocking
+    androidTestCompile 'com.google.dexmaker:dexmaker:1.2'
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.2.0@aar') {
+        transitive = true
+    }
+
+    compile('com.twitter.sdk.android:twitter:1.13.1@aar') {
+        transitive = true
+    }
+
+    compile 'com.google.android.gms:play-services-analytics:8.4.0'
+
+    compile 'com.googlecode.plist:dd-plist:1.16'
+
+}

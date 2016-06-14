@@ -38,5 +38,4 @@ obj/
 # Lazybones
 .lazybones
 
-
-
+app/fabric.properties
