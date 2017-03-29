@@ -189,7 +189,7 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
 
         @Override
         int getCount() {
-            4
+            2
         }
 
         @Override

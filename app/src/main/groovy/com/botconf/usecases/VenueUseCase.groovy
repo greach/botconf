@@ -14,11 +14,11 @@ class VenueUseCase {
     }
 
     float longitude() {
-        -3.698301
+        -3.698145
     }
 
     float latitude() {
-        40.431932
+        40.43188
     }
 
 

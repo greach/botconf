@@ -1,0 +1,1849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>metadata</key>
+	<dict>
+		<key>lastUpdated</key>
+		<date>2017-03-29T06:59:15Z</date>
+	</dict>
+	<key>sessions</key>
+	<dict>
+		<key>excel-in-groovy</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017127</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-30T07:00:00Z</date>
+			<key>duration</key>
+			<integer>180</integer>
+			<key>trackId</key>
+			<integer>0</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAB1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Excel in Groovy</string>
+			<key>sessionDescription</key>
+			<string>Business users love to interact with applications with spreadsheet files as much as the developers hates doing so. In this workshop you will learn how to create rich MS Excel files using Groovy as well as how to read these files in a more Groovy manner.
+  Requirements
+– Java 8
+– Strongly recommended is to have Microsoft Excel. Without official MS Excel you won’t be able to review the results properly as LibreOffice, Numbers or Google Sheets doesn’t provide 100% same results.
+– It is recommended to use IntelliJ IDEA as it plays the best with Gradle projects
+</string>
+			<key>presenters</key>
+			<array>
+				<string>musketyr</string>
+			</array>
+			<key>roomId</key>
+			<integer>0</integer>
+		</dict>
+		<key>building-a-microservice-federation-with-grails-3-and-spring-cloud</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017128</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-30T07:00:00Z</date>
+			<key>duration</key>
+			<integer>180</integer>
+			<key>trackId</key>
+			<integer>1</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAF1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Building a Microservice Federation with Grails 3 and Spring Cloud</string>
+			<key>sessionDescription</key>
+			<string>In this worshop, we’ll explore essential elements of microservices architectures, then the development of a small federation of microservices using Grails 3.x. We’ll start with a completed monolith, then decompose it into a small federation of independently maintainable, deployable, and scalable microservices. We’ll examine automatic data marshaling and binding of XML and JSON data, REST capabilities, and techniques for implementing security. We’ll end up with a small federation of Grails microservices leveraging Spring Cloud microservices to deliver enterprise scalability and resiliency.
+Grails developers have long loved Grails as a platform for building robust web applications. Grails 2.3 gave us powerful server-side REST improvements. Grails 3.x brings Spring Boot for building standalone JARs. This evolution has brought us to the point where we can finally build a federation of loosely-coupled microservices with smaller, more focused, more easily maintained codebases resulting in applications that are trivially easy to deploy and scale and resilient to failure.
+Finally, for all the benefits of a microservice architecture, the story’s not all sunshine and lollipops, so we’ll discuss some of the pain points of adopting a microservice architecture.
+Requirements
+– JDK 8
+– Git
+– Grails 3.2.x
+– A bonus exercise in the workshop will use Docker (time permitting), so try to have Docker installed if you can.
+Alternatively, a Linux VirtualBox image will be provided with all the tooling installed, so if you’d rather use the VM image, make sure you have VirtualBox installed.
+A Git URL will be provided to download the workshop materials, but I’ll also have the tooling, VM, and workshop materials on USB sticks.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>jackfrosch</string>
+			</array>
+			<key>roomId</key>
+			<integer>0</integer>
+		</dict>
+		<key>lunch-2</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017129</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-30T10:00:00Z</date>
+			<key>duration</key>
+			<integer>60</integer>
+			<key>trackId</key>
+			<integer>1</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAJ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Lunch</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>0</integer>
+		</dict>
+		<key>your-very-first-macro-method</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017130</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-30T11:00:00Z</date>
+			<key>duration</key>
+			<integer>180</integer>
+			<key>trackId</key>
+			<integer>1</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAN1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Your very first macro method</string>
+			<key>sessionDescription</key>
+			<string>Hype around the macro methods is growing. But it’s not always clear why you should care about it. How would they change your life as a user? And will they?
+This workshop is a great way to try them yourself, to write your first macro method.
+Who knows, maybe exactly you will create a new GORM, Spock, some cool logger or even Pattern Matching, why not? Good news – no annotations or global transformations are needed. Just a method.
+Requirements
+– Java 7/8
+– IntelliJ IDEA
+– Git
+– Cloned and resolved repository (tba)
+</string>
+			<key>presenters</key>
+			<array>
+				<string>bsideup</string>
+			</array>
+			<key>roomId</key>
+			<integer>0</integer>
+		</dict>
+		<key>testing-grails-3-the-good-unit-the-bad-integration-and-the-ugly-functional</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017131</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-30T11:00:00Z</date>
+			<key>duration</key>
+			<integer>180</integer>
+			<key>trackId</key>
+			<integer>0</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAR1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Testing Grails 3: the good (unit), the bad (integration) and the ugly (functional)</string>
+			<key>sessionDescription</key>
+			<string>In this workshop we will cover all testing types that we have in Grails 3. Through exercises and examples, we will see the different cases that we can find in a Grails 3 app, like injecting beans, mocking request, scrapping a page, check the response of a controller, validating domain classes, overriding methods to mock the response and much more.
+Requirements
+– Java 8
+– Sdkman
+– Grails 3.2.6
+– Mysql
+– Cloned the repo (tba)
+</string>
+			<key>presenters</key>
+			<array>
+				<string>alberto_deavila</string>
+			</array>
+			<key>roomId</key>
+			<integer>0</integer>
+		</dict>
+		<key>gradle-plugin-writing-workshop</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017132</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-30T14:00:00Z</date>
+			<key>duration</key>
+			<integer>180</integer>
+			<key>trackId</key>
+			<integer>1</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Gradle Plugin Writing Workshop</string>
+			<key>sessionDescription</key>
+			<string><![CDATA[This workshop takes attendees through all the steps of writing their first Gradle plugin. Using an idiomatic approach attendees can create a DSL that is both gradlesque and readable. Some of the technical to be overed include: Setting up a Gradle plugin project Building for wide Gradle & JDK compatibility Idioms for creating task properties Hooking into build and configuration events Dynamic dependency loading Publishing the plugin Attendees will also receive a coupon to a free copy of the presenter’s book “Idiomatic Gradle: 25 Recipes for Plugin Authors”.
+Requirements
+– Be able to code in Groovy
+– Know the basics of writing Gradle scripts
+– Java 7/8
+– Git
+]]></string>
+			<key>presenters</key>
+			<array>
+				<string>ysb33r</string>
+			</array>
+			<key>roomId</key>
+			<integer>0</integer>
+		</dict>
+		<key>jenkins-pipelines-as-code-with-job-dsl</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017133</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-30T14:00:00Z</date>
+			<key>duration</key>
+			<integer>180</integer>
+			<key>trackId</key>
+			<integer>0</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Jenkins Pipelines as Code with Job DSL</string>
+			<key>sessionDescription</key>
+			<string>In this workshop we will learn what delivery pipelines are and how to build, evolve and maintain them using Jenkins Job DSL. We will create a pipeline for Gradle based project using Groovy DSL, test it using Spock framework and touch on building our own DSL on top of Job DSL.
+Apart from all the grooviness we will also learn how to automate and version control our software delivery infrastructure.
+Requirements
+– Java 8
+– Gradle
+– IntelliJ IDEA (Community edition is sufficient)
+– Downloaded Jenkins WAR archive
+– Clone https://github.com/kamilszymanski/jobdsl-workshop.git and run “./gradlew build” to dowload dependencies
+</string>
+			<key>presenters</key>
+			<array>
+				<string>kszdev</string>
+			</array>
+			<key>roomId</key>
+			<integer>0</integer>
+		</dict>
+		<key>registration</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017134</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T06:00:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAd1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Registration</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>welcome-to-greach-2017</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017135</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T06:45:00Z</date>
+			<key>duration</key>
+			<integer>15</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAh1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Welcome to Greach 2017</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>keynote</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017136</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T07:00:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAl1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Keynote</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+				<string>burtbeckwith</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>make-concurrency-groovy-again</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017137</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T08:00:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAp1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Make concurrency groovy again</string>
+			<key>sessionDescription</key>
+			<string>Don’t get me wrong. Concurrency is already “groovy” in Groovy but with each passing day we usualy try to focus on even higher and higher levels of abstraction. From GPars to Rx we’re treating concurrency as a byproduct of our paradigms so usualy when things got ugly (as usualy happens with concurrency) we don’t have a “Plan B”.
+In this talk I’ll try to ground some of the possible flavors of concurrency that we have available inside the Groovy language and the JVM ecosystem starting with threads and going through higher levels like Rx and even Akka.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>alotor</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>a-test-driven-approaches-to-documenting-restful-apis-with-groovy-and-spring-rest-docs</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017138</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T08:00:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAt1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>A Test-Driven Approaches to Documenting RESTful APIs with Groovy and Spring REST Docs</string>
+			<key>sessionDescription</key>
+			<string>Documentation generated from source code is very popular. Solutions such as Swagger are available for many different languages and frameworks. However, limitations of annotation based tools are becoming apparent. An overwhelming number of documentation annotations make for great docs but muddy the source code. Then, something changes and the docs are out of date again.
+Test-driven documentation solutions, such as Spring Rest Docs, generate example snippets for requests and responses from tests ensuring both code coverage and accurate documentation. It can even fail the build when documentation becomes out of date. This session will walk through how to implement test-driven documentation solutions for groovy ecosystem technologies like Spring Boot, Grails, and Ratpack.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>codeJENNerator</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>coffee-break</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017139</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T08:45:00Z</date>
+			<key>duration</key>
+			<integer>30</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAx1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Coffee Break</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>javaslang-groovy-the-best-of-both-worlds</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017140</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T09:15:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAA11cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string><![CDATA[Javaslang & Groovy: The best of both worlds]]></string>
+			<key>sessionDescription</key>
+			<string>We all know that writing Java code can be verbose and boring, that’s why we use Groovy. But even using Groovy some times our code is not as clean as we would like to be.
+In this talk you’ll learn how you can improve your code using Javaslang and Groovy. Javaslang is a Java library that helps to reduce the amount of code and increase the robustness using a functional approach. I won’t talk about mondads, functors and all those buzzwords related to the functional programming. Everything will be practical Groovy examples that you can use in your daily work.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>ilopmar</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>grails-interview-questions</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017141</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T09:15:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAA51cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Grails Interview Questions</string>
+			<key>sessionDescription</key>
+			<string>In this talk we discuss about different types of questions that can be used in a Grails interview to test your skills in Grails and Groovy programming in general.
+Sergio del Amo, curator of the newsletter Groovy Calamari ( http://groovycalamari.com), guides you through a set of questions which cover different parts of the framework: Controllers, Views, GSPs, Controllers, Command objects, GORM…
+Wether you are an experienced Grails developer or a beginner this talk gives you a shared vocabulary about how Grails works and its conventions.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>sdelamo</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>back-from-the-dead-http-builder-ng</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017142</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T10:15:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAA91cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Back From The Dead: HTTP Builder NG</string>
+			<key>sessionDescription</key>
+			<string>Many Groovy developers have lost either faith, sanity or both from using Groovy’s HTTP Builder, but the gauntlet has been thrown once again and the project is back to life! In this talk I will present the new project syntax, talk about basic the basic features and discuss advanced use cases.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>NoamTenne</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>monitoring-and-metrics-with-grails-3</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017143</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T10:15:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABB1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Monitoring And Metrics With Grails 3</string>
+			<key>sessionDescription</key>
+			<string>Knowing what is going on inside of a running Grails application can be an important part of optimizing a production environment. This can be particularly important in a micro-service architecture where there are multiple pieces of the system which may need to be scaled up/down independent of the rest of the system in response to changing load conditions. Grails 3 offers very powerful capabilities related to monitoring and metrics. This session will discuss and demonstrate those capabilities.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>jeffscottbrown</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>lunch</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017144</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T11:00:00Z</date>
+			<key>duration</key>
+			<integer>60</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABF1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Lunch</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>hasmany-considered-harmful</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017145</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T12:00:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABJ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>hasMany Considered Harmful</string>
+			<key>sessionDescription</key>
+			<string>In 2010 I presented a talk at SpringOne/2GX on mapped collections in Grails (https://www.infoq.com/presentations/GORM-Performance), pointing out potentially significant performance problems when using them and presenting simple alternative approaches for working with one-many and many-many relationships. In the many years since then I have often referenced this talk because the problems I pointed out are just as relevant today as they were back then. In this talk I’ll revisit those ideas with updated code and information and encourage you to stop using hasMany and mapped collections in your Grails applications to avoid unintentionally hurting the performance of your applications.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>burtbeckwith</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>whats-new-in-groovy-2-5</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017146</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T12:00:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABN1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>What’s new in Groovy 2.5</string>
+			<key>sessionDescription</key>
+			<string>The talk will be about the new features of Goovy 2.5 and why parrots are involved
+</string>
+			<key>presenters</key>
+			<array>
+				<string>JochenTheodorou</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>graphql-development-with-groovy</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017147</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T13:00:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABR1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>GraphQL development with Groovy</string>
+			<key>sessionDescription</key>
+			<string>In this talk I’ll be talking about why GraphQL could be the next thing on developing APIs and how it could complement your existing REST APIs.
+GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn’t tied to any specific database or storage engine and is instead backed by your existing code and data.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>marioggar</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>making-the-most-of-your-gradle-build</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017148</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T13:00:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Making the Most of Your Gradle Build</string>
+			<key>sessionDescription</key>
+			<string>Gradle can do awesome things by itself, but you get more bang when you combine your build with plugins. This presentation shows how you can keep dependencies up to date; obtain a license report for all dependencies, useful for licensing compliance; keep license headers up to date; generate aggregate coverage reports; create binary compatibility reports; write documentation that can access production code; and publish documentation to Github. Come discover how to make the most of your Gradle build with less effort.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>aalmiray</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>coffee-break-2</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017149</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T13:45:00Z</date>
+			<key>duration</key>
+			<integer>30</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Coffee Break</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>groovy-integration-testing-with-spock-and-docker</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017150</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T14:15:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABd1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Groovy integration testing with Spock and Docker</string>
+			<key>sessionDescription</key>
+			<string>The rise of container technologies allows us to fundamentally change the way we develop, test and deploy software. However, the problem and solution space with which software developers are confronted nowadays has become even bigger and we as a profession still need to discover patterns and practices for successfully dealing with this level of complexity.
+Thanks to tools like Docker, spinning up a full-fledged relational database isn’t more difficult or time consuming than using an in-memory database anymore. So why not run your integration tests on your local machine, inside an environment which resembles production as close as possible?
+This talk demonstrates how to use Docker in conjunction with Spock by providing live demos and best-practices for joyful integration testing. You will see how to spin-up and tear-down databases (relational and NoSQL), web-servers and even external applications on a test-class and test-method basis. In the end we’ll even have an outlook on functional testing using GEB and docker-compose with Spock.
+Attendees should have basic knowledge about Spock and Docker.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>Kiview</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>gorm-61</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017151</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T14:15:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABh1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>GORM 6.1</string>
+			<key>sessionDescription</key>
+			<string></string>
+			<key>presenters</key>
+			<array>
+				<string>graemerocher</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>groovy-puzzlers-4-the-bytecode-bites-back</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017152</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-03-31T15:15:00Z</date>
+			<key>duration</key>
+			<integer>60</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABl1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Groovy Puzzlers 4: The Bytecode Bites Back</string>
+			<key>sessionDescription</key>
+			<string>You wake up. You’re in a room. The walls are riddled with codes. The fellow sitting next to you looks puzzled. An airborne t-shirt hits you in the head. It’s back! Groovy puzzlers in it’s 4th consecutive season with more “NO WAY!”, “WHOA!”, “WTF!”, O_o and pure entertainment value! All contributed by top-notch Groovy authors and users!
+ </string>
+			<key>presenters</key>
+			<array>
+				<string>NoamTenne</string>
+				<string>el_groovyssimo</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>breakfast</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017153</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T06:00:00Z</date>
+			<key>duration</key>
+			<integer>30</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABp1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Breakfast</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>stuck-on-jenkins-or-high-on-pipeline</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017154</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T06:30:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABt1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Stuck on Jenkins or High on Pipeline?</string>
+			<key>sessionDescription</key>
+			<string>In this talk, I will take a critical look at the Jenkins Pipelines.
+What is the status of the documentation, what are the nooks and crannies to get things working, and what is a real PITA to get working.
+In the process, the pipeline used for a development pipeline will be demoed, with code samples.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>JacobAae</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>masters-of-groovy-challenge</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017155</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T06:30:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAABx1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Masters of Groovy challenge</string>
+			<key>sessionDescription</key>
+			<string>In for a Groovy battle? Then join our coding contest and challenge your practical skills on enjoyable Groovy coding exercises. A large Groovy coding contest will be facilitated using our Open Source framework called MOJ (Masters Of Java). Now, you can compare your Groovy development skills with the rest of the attendees. Be the quickest battler, have coding fun and show the audience that you are a true Groovy Master. Learn also how you can start coding competitions in your own company, by using our Open Source framework.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>koenusTweets</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>alexa-tell-me-im-groovy</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017156</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T07:30:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAB11cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Alexa, Tell Me I’m Groovy</string>
+			<key>sessionDescription</key>
+			<string>The Amazon Echo is more than a home toy – you can have the real star trek experience in your home with hooks into home automation platforms, streaming music, news, help you cook, tell you jokes, etc. Now let’s Groovy all the things and make a Grails app that can host new Alexa skills! I will go over how to make them in two ways, via Grails 3 and web services and also via AWS Lamba. You can use Groovy for both of these approaches! I will bring a couple Alexa capable devices to demonstrate some fun things you can do with it.
+I’m sure if you don’t already have one you’ll be hacking away as soon as you get home!
+</string>
+			<key>presenters</key>
+			<array>
+				<string>RyanVanderwerf</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>what-do-the-spring-clouds-smell-like</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017157</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T07:30:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAB51cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>What do the Spring clouds smell like?</string>
+			<key>sessionDescription</key>
+			<string>Spring Cloud it’s one of the most important projects by Pivotal, where they introduce the concept of “cloud native” applications: a discipline that encourages best practices for distributed systems (e.g. configuration management, service discovery, circuit breakers, intelligent routing, micro-proxy, control bus, one-time tokens, global locks, leadership election, distributed sessions, cluster state).
+This session explains the different components of the Spring Cloud ecosystem, and show how to use them in Grails 3. In particular, the focus will be in Spring Cloud Config, Spring Cloud Netflix and Spring Cloud Consul.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>alvaro_sanchez</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>grails-keynote</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017158</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T08:30:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAB91cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Grails Keynote</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+				<string>graemerocher</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>coffee-break-3</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017159</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T09:15:00Z</date>
+			<key>duration</key>
+			<integer>30</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACB1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Coffee break</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>geb-best-practices</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017160</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T09:45:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACF1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Geb best practices</string>
+			<key>sessionDescription</key>
+			<string>During this talk I will try to share my experience of 5 years of using and contributing to Geb. Expect hearing about advanced usage patterns as well as about what did and didn’t work well for me and my teams when using Geb.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>marcinerdmann</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>polyglot-web-development-with-grails-3</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017161</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T09:45:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACJ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Polyglot Web Development With Grails 3</string>
+			<key>sessionDescription</key>
+			<string>Grails is one of the most flexible and most powerful frameworks on The Java Platform. Grails leverages the flexibility offered by the platform in a way that other web frameworks do not. Grails is a fantastic platform for polglot web programming. Part of what makes Grails so compelling is its really powerful plugin system. The Grails plugin system allows capabilities to be bolted on to applications, including adding support for a variety of programming languages. All of the major programming languages available on the JVM are supported by The Grails Framework. These include Java, Groovy, Scala, Clojure and others. This session will dive in to that aspect of the framework with a focus on Scala and Clojure and will demonstrate what is involved in adding support for new languages.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>jeffscottbrown</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>mastering-async-in-ratpack</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017162</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T10:45:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACN1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Mastering Async In Ratpack</string>
+			<key>sessionDescription</key>
+			<string>Ratpack is asynchronous and non-blocking from the ground up. Subsequently a lot of the Ratpack API returns Promises or Operations.
+In this talk we’ll cover the Ratpack concept of Promises. We’ll cover how to use promises, how to test it and how to control execution flow.
+By the end of this talk you’ll feel like Neo from the Matrix.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>Lspacewalker</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>groovyfx-groove-javafx</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017163</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T10:45:00Z</date>
+			<key>duration</key>
+			<integer>45</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACR1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>GroovyFX – Groove JavaFX</string>
+			<key>sessionDescription</key>
+			<string>Oracle decided to give JavaFX a pure Java-API – a good one. But we have to pay the price with longer code and worse readability.
+GroovyFX simplifies JavaFX development, makes it nicer and more groovy.
+This session compares JavaFX and GroovyFX and shows how easy JavaFX development can be.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>saschaklein</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>lunch-3</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017164</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T11:30:00Z</date>
+			<key>duration</key>
+			<integer>60</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Lunch</string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>the-road-from-java-to-groovy</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017165</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T12:30:00Z</date>
+			<key>duration</key>
+			<integer>15</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>The Road from Java to Groovy (Lightning-talk)</string>
+			<key>sessionDescription</key>
+			<string>The road from Java to Groovy would be perfect if all you had to do is rename a .java file to .groovy and recompile. However, the reality is, the road is not perfectly smooth and can be filled with speed bumps, curves and speed limits.
+This talk is your road map around these impediments and hindrances that can slow your migration to Groovy. It will provide solutions, workarounds and best practices to quickly get you on the fast lane. Along the way, we’ll cover some useful Groovy idioms that can replace more verbose Java equivalents.
+Topics to be covered include: Cruising I-95: Interop Highway Caution: Sharp keyword corner ahead Pavement potholes: Groovy’s missing parts Avoiding idiomatic collisions Moving into the fastlane GPS: Tools and techniques to avoid dangerous territory
+</string>
+			<key>presenters</key>
+			<array>
+				<string>jackfrosch</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>grails-angular-unleashing-the-dynamic-duo-lightning-talk</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017166</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T12:30:00Z</date>
+			<key>duration</key>
+			<integer>15</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACd1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string><![CDATA[Grails & Angular: unleashing the dynamic duo (lightning talk)]]></string>
+			<key>sessionDescription</key>
+			<string><![CDATA[Nowadays, Grails has become one of the best frameworks to implement modern web applications and RESTful microservice architectures. Furthermore, in Grails 3, AngularJS profiles with targeted plugins and code generation capabilities for rapidly building Single-Page Applications (SPAs) are included.
+In this speech, we will review the relevant concepts and tools that we need in order to achieve a successful partnership between both technologies. Particularly, we are presenting a solution based on the Gradle & NPM combination, which we are currently and successfully applying to our new projects.
+]]></string>
+			<key>presenters</key>
+			<array>
+				<string>Ruuben4</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>groovy-for-system-scripting-lightning-talk</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017167</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T13:00:00Z</date>
+			<key>duration</key>
+			<integer>15</integer>
+			<key>trackId</key>
+			<integer>3</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACh1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>Groovy for system scripting (Lightning-talk)</string>
+			<key>sessionDescription</key>
+			<string>Write Groovy scripts to solve problems using the power of the Groovy/Java ecosystem and the power of your system’s programs.
+Learn how to use external programs with the Groovy syntax, add useful dependencies with Grape and leverage the Groovy programming language. Everything guided by a practical example.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>TomasCrespo</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+		<key>closure-raffle</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017168</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T13:20:00Z</date>
+			<key>duration</key>
+			<integer>20</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACl1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string><![CDATA[Closure & Raffle]]></string>
+			<key>sessionDescription</key>
+			<string> </string>
+			<key>presenters</key>
+			<array>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>people</key>
+	<dict>
+		<key>musketyr</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017169</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Vladimir</string>
+			<key>last</key>
+			<string>Orany</string>
+			<key>twitter</key>
+			<string>musketyr</string>
+			<key>bio</key>
+			<string>Vladimir is Independent Software Engineer and Gaelyk Project Lead. He is interested in domain specific languages, cloud computing and writing magical code using AST transformations.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/vladimir-orany.jpg</string>
+		</dict>
+		<key>jackfrosch</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017199</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Jack</string>
+			<key>last</key>
+			<string>Frosch</string>
+			<key>twitter</key>
+			<string>jackfrosch</string>
+			<key>bio</key>
+			<string>Jack Frosch is a seasoned software developer, architect and mentor, currently supporting an Enterprise Integration project using Groovy and Apache Camel.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/jack-frosch.jpg</string>
+		</dict>
+		<key>bsideup</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017171</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Sergei</string>
+			<key>last</key>
+			<string>Egorov</string>
+			<key>twitter</key>
+			<string>bsideup</string>
+			<key>bio</key>
+			<string>DevOps Advocate at ZeroTurnaround. Apache Groovy committer. The creator of MacroGroovy and macro methods.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/sergei-egorov.jpg</string>
+		</dict>
+		<key>alberto_deavila</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017172</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Alberto</string>
+			<key>last</key>
+			<string>De Ávila Hernández</string>
+			<key>twitter</key>
+			<string>alberto_deavila</string>
+			<key>bio</key>
+			<string>Alberto is Team Lead at Salenda, a company that this years celebrate 10 years and it is dedicated to software development, mainly in Groovy, Grails, Spring Boot and Angular 2. He has been working with Groovy and Grails since 2011, and he is an Atlassian suite lover using all days JIRA, Confluence and the others Atlassian’s tools. He usually attend events like Greach, Madrid GUG, Spring I / O, Codemotion and others related to the Java ecosystem and its variants. In 2016, he has been speaker at Codemotion with a talk about a comparison between Java, Groovy and Swift programming languagues.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/alberto-deavila.jpg</string>
+		</dict>
+		<key>ysb33r</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017173</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Schalk</string>
+			<key>last</key>
+			<string>Cronjé</string>
+			<key>twitter</key>
+			<string>ysb33r</string>
+			<key>bio</key>
+			<string>Schalk Cronjé’s experience in the software industry spans three decades and has performed most roles in software delivery. He believes that both software engineering and craftsmanship is important for the industry and that both disciplines should be taught to achieve holism in technology delivery. He also understands that there is a strong relationship between the modern software techniques that are used and the signature skills of people and these should be aligned for effective delivery. He is also a strong advocate of using systems thinking, holistic stakeholder analysis and impact mapping. He keeps his technical skills fit by frequent contributions to various open-source projects. He is the creator of Groovy-VFS as well a maintainer of various Gradle plugins including for JRuby, GMake, Doxygen and more. He is a regular speaker on various software delivery techniques in the UK, USA, India and South Africa. He currently serves as a steering committee member of the Agile Testing Alliance. He is also the author of “Idiomatic Gradle: 25 recipes for plugin authors” and is curretnly working on Vol 2.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/schalk-cronje.jpg</string>
+		</dict>
+		<key>kszdev</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017174</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Kamil</string>
+			<key>last</key>
+			<string>Szymański</string>
+			<key>twitter</key>
+			<string>kszdev</string>
+			<key>bio</key>
+			<string><![CDATA[Software developer, JVM & open-source enthusiast, develops D2C investment platform @ Pragmatic Coders]]></string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/kamil-szyma%C5%84ski.png</string>
+		</dict>
+		<key>burtbeckwith</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017182</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Burt</string>
+			<key>last</key>
+			<string>Beckwith</string>
+			<key>twitter</key>
+			<string>burtbeckwith</string>
+			<key>bio</key>
+			<string>Burt Beckwith has been a software developer for over 15 years, most of that as a JVM developer but more recently working with a wide variety of platforms and frameworks. He is a Grails core committer and plugin developer and has created over 50 Grails plugins and has contributed to over 200 others. Burt is a frequent speaker at conferences and user groups where he shares his passion for Grails and other Groovy-based technologies, in particular those that are related to persistence, security, and performance. He is the author of Programming Grails and blogs at http://blog.burtbeckwith.com</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/burt-beckwith.jpg</string>
+		</dict>
+		<key>alotor</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017176</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Alonso</string>
+			<key>last</key>
+			<string>Torres</string>
+			<key>twitter</key>
+			<string>alotor</string>
+			<key>bio</key>
+			<string>Software engineer at Kaleidos Open Source, Alonso has been developing within the Java and JVM ecosystem for more than 10 years. Nowadays he is a full-time Groovy/Grails developer focusing mostly in advanced Web plattforms for big companies and startups. He also combines his day to day job with the collaboration in several open source projects, public speaking and evangelizing about functional programming and functional best practices in general.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/alonso-torres.jpg</string>
+		</dict>
+		<key>codeJENNerator</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017177</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Jenn</string>
+			<key>last</key>
+			<string>Strater</string>
+			<key>twitter</key>
+			<string>codeJENNerator</string>
+			<key>bio</key>
+			<string>Jennifer “Jenn” Strater is the co-founder of the organization Gr8Ladies. She has also organized Gr8Workshops for developers interested in an overview and crash course in Groovy technologies. She has presented on several Groovy topics at events such as the Grace Hopper Celebration of Women in Computing, Greach, Gr8Conf EU, Gr8Conf US, and Devoxx Belgium. In August 2016, Jenn started in the master’s program at the Technical University of Denmark(DTU). She is studying static analysis and compilers with a focus on Groovy with funding from the Fulbright U.S. Student Program.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/jenn-strater.jpg</string>
+		</dict>
+		<key>ilopmar</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017178</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Iván</string>
+			<key>last</key>
+			<string>López</string>
+			<key>twitter</key>
+			<string>ilopmar</string>
+			<key>bio</key>
+			<string>Iván is a Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails team at OCI. He discovered Grails 7 years ago and since then he develops almost exclusively using Groovy. He is the creator of some Grails plugins like Postgresql-Extensions and Slug-Generator.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/ivan-lopez.jpg</string>
+		</dict>
+		<key>sdelamo</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017179</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Sergio</string>
+			<key>last</key>
+			<string>del Amo</string>
+			<key>twitter</key>
+			<string>sdelamo</string>
+			<key>bio</key>
+			<string></string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/sergio-delamo.jpg</string>
+		</dict>
+		<key>NoamTenne</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017188</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Noam</string>
+			<key>last</key>
+			<string>Tenne</string>
+			<key>twitter</key>
+			<string>NoamTenne</string>
+			<key>bio</key>
+			<string>A hacker-hearted software developer. Has been programming on the JVM for the past 12 years on both cloud based and on-premise platforms, gaining much experience in building scalable, mission critical web applications and microservices. Now kicking Docker container asses and taking names at Codefresh Inc.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/noam-tenne.jpg</string>
+		</dict>
+		<key>jeffscottbrown</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017196</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Jeff</string>
+			<key>last</key>
+			<string>Scott Brown</string>
+			<key>twitter</key>
+			<string>jeffscottbrown</string>
+			<key>bio</key>
+			<string>OCI Grails Practice Lead, Grails co-founder and member of the OCI Core Grails Development team,
+Jeff Scott Brown has been doing JVM application development for as long as the JVM has existed
+and has spent most of the last decade focused specifically on work related to the Grails framework.
+Jeff has co-authored The Definitive Guide To Grails Second Edition and The Definitive Guide To Grails
+2 with Grails founder and OCI Grails Development Lead Graeme Rocher. Jeff is also a regular public
+speaker on Grails, Groovy and other JVM related technologies.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/jeff-brown.jpg</string>
+		</dict>
+		<key>JochenTheodorou</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017183</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Jochen</string>
+			<key>last</key>
+			<string>Theodorou</string>
+			<key>twitter</key>
+			<string>JochenTheodorou</string>
+			<key>bio</key>
+			<string>8 years of Groovy-core work in different companies and since 2016 at Canoo in Basel</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/02/jochen-theodorou.jpg</string>
+		</dict>
+		<key>marioggar</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017184</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Mario</string>
+			<key>last</key>
+			<string>García</string>
+			<key>twitter</key>
+			<string>marioggar</string>
+			<key>bio</key>
+			<string>I guess the more languages you speak the more people you can talk with.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/mario-garcia.jpg</string>
+		</dict>
+		<key>aalmiray</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017185</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Andres</string>
+			<key>last</key>
+			<string>Almiray</string>
+			<key>twitter</key>
+			<string>aalmiray</string>
+			<key>bio</key>
+			<string>Andres is a Java/Groovy developer and a Java Champion with more than 17 years of experience in software design and development. He has been involved in web and desktop application development since the early days of Java. Andres is a true believer in open source and has participated on popular projects like Groovy, Griffon, and DbUnit, as well as starting his own projects (Json-lib, EZMorph, GraphicsBuilder, JideBuilder). Founding member of the Griffon framework and Hackergarten community event.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/andres-almiray.jpg</string>
+		</dict>
+		<key>Kiview</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017186</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Kevin</string>
+			<key>last</key>
+			<string>Wittek</string>
+			<key>twitter</key>
+			<string>Kiview</string>
+			<key>bio</key>
+			<string>Java developer and JVM fanboy since being introduced to the language back in school 12 years ago. Found his own company during his university years, developing mobile apps and client-server applications, which lead to his discovery of Grails and the Groovy ecosystem. Fell in love with TDD because of Spock. Nowadays Kevin is working at the cyber security company GDATA and focuses on topics such as software craftsmanship, infrastructure as code and continuous integration pipelines, trying to make the world a better place one container at a time.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/kevin-wittek.jpg</string>
+		</dict>
+		<key>graemerocher</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017194</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Graeme</string>
+			<key>last</key>
+			<string>Rocher</string>
+			<key>twitter</key>
+			<string>graemerocher</string>
+			<key>bio</key>
+			<string>Graeme Rocher is co-founder and Project Lead for Grails. Graeme has worked in the software development field for more than 20 years and has expertise in Grails, Groovy, Web Development, Dynamic Languages and the JVM. Graeme leads the development of the Grails framework at OCI in St. Louis, MO. Graeme is co-author (with Jeff Scott Brown) of “The Definitive Guide to Grails”.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2013/12/Graeme-Rocher.jpeg</string>
+		</dict>
+		<key>el_groovyssimo</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017189</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>El</string>
+			<key>last</key>
+			<string>Groovyssimo</string>
+			<key>twitter</key>
+			<string>el_groovyssimo</string>
+			<key>bio</key>
+			<string>El Groovyssimo</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/03/el-groovyssimo.jpg</string>
+		</dict>
+		<key>JacobAae</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017190</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Jacob</string>
+			<key>last</key>
+			<string>Aae Mikkelsen</string>
+			<key>twitter</key>
+			<string>JacobAae</string>
+			<key>bio</key>
+			<string>Jacob is a senior software engineer with the Lego Group, working with a new micro service based digital platform for Lego Education. He has been working full time with Groovy based technologies the last 4 years, including an extended period programming core libraries for the Danish Business Authority in Grails (while with Gennemtænkt IT).</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/jacob-aae-mikkelsen.jpg</string>
+		</dict>
+		<key>koenusTweets</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017191</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Koen</string>
+			<key>last</key>
+			<string>Aben</string>
+			<key>twitter</key>
+			<string>koenusTweets</string>
+			<key>bio</key>
+			<string>Koen Aben works as a senior Grails software engineer for the Dutch engineering company called First8. In his spare time he is an active contributor for the dutch Java User Group (NLJUG). Recently, he has succesfully facilitated a Java contest with about 50 contenders for the NLJUG. He has also founded an hackerspace in Eindhoven, where coders in Eindhoven can meet every week.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/koen-aben.jpg</string>
+		</dict>
+		<key>RyanVanderwerf</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017192</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Ryan</string>
+			<key>last</key>
+			<string>Vanderwerf</string>
+			<key>twitter</key>
+			<string>RyanVanderwerf</string>
+			<key>bio</key>
+			<string>Ryan is a developer at OCI on the Grails team. Formerly Chief Systems and Software Architect and
+Director of Products at ReachForce and Lead Architect at Developerprogram.com. He has helped
+maintain various Grails plugins, and co-chair of the Austin Groovy and Grails User Group in Austin,
+TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/ryan-vanderwerf.jpg</string>
+		</dict>
+		<key>alvaro_sanchez</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017193</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Álvaro</string>
+			<key>last</key>
+			<string>Sánchez-Mariscal</string>
+			<key>twitter</key>
+			<string>alvaro_sanchez</string>
+			<key>bio</key>
+			<string>Álvaro is a member of the Grails team at OCI and a Grails committer. He is a passionate software architect and agile enthusiast with over 16 years of experience. He started his career in 2001 coding in Perl and Java, but then quickly focused on Java EE, working for companies like IBM BCS, BEA Systems or Sun Microsystems. He created his own company, Salenda, in 2005, the very first Grails company in Spain. Since 2013 he has worked in different industries like gambling games and fintech. He now works for OCI, the company behind Grails. Álvaro is a speaker at conferences like GeeCON, JavaLand, JavaZone and Codemotion. He has also written several Grails plugins, including Spring Security REST, which provides stateless, RESTful, token based authentication for Grails using OAuth 2 and JWT.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/alvaro-sanchez-mariscal.jpg</string>
+		</dict>
+		<key>marcinerdmann</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017195</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Marcin</string>
+			<key>last</key>
+			<string>Erdmann</string>
+			<key>twitter</key>
+			<string>marcinerdmann</string>
+			<key>bio</key>
+			<string>Marcin has been developing in Groovy since 2010. Currently based in London, he passionately believes in the idea of Open Source Software and has a strong need to give back to the community whenever possible. That’s why he’s proud to be the current project lead of Geb, a Groovy Browser automation library and a committer to Ratpack. He also contributed to many open source projects in the Groovy ecosystem over the years and he enjoys going to conferences both as an attendee and a speaker -that’s where you will find him with a pint of good beer in hand engaged in lengthy discussions on how to make software development process and quality better.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/Marcin-Erdmann.jpeg</string>
+		</dict>
+		<key>Lspacewalker</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017197</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Danny</string>
+			<key>last</key>
+			<string>Hyun</string>
+			<key>twitter</key>
+			<string>Lspacewalker</string>
+			<key>bio</key>
+			<string>Danny is a software engineering working in the JVM space. He is also an open source committer and loves to talk about technology.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/danny-hyun.jpg</string>
+		</dict>
+		<key>saschaklein</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017198</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Alexander</string>
+			<key>last</key>
+			<string>(Sascha) Klein</string>
+			<key>twitter</key>
+			<string>saschaklein</string>
+			<key>bio</key>
+			<string>Alexander Klein is branch manager at codecentric AG in germany. He works for more almost 20 years in the java-ecosystem as developer, architect and trainer. His interests are UI-development and -ergonomy and development efficency. He is an avowed opensource and Groovy follower and Griffon commiter.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2014/01/alexander-klein.jpg</string>
+		</dict>
+		<key>Ruuben4</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017200</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Rubén</string>
+			<key>last</key>
+			<string>Mondéjar</string>
+			<key>twitter</key>
+			<string>Ruuben4</string>
+			<key>bio</key>
+			<string>Rubén is a PhD and Software Architect currently working at Diputació de Tarragona (DIPTA). His current work is mainly focused on software development using Groovy and Grails ecosystems combined with integration solutions for Developer-Friendly BPM. He is also working as an Adjunct Professor for the Universitat Rovira i Virgili and Universitat Oberta de Catalunya.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/ruben-mondejar.jpg</string>
+		</dict>
+		<key>TomasCrespo</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017201</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Tomás</string>
+			<key>last</key>
+			<string>Crespo García</string>
+			<key>twitter</key>
+			<string>TomasCrespo</string>
+			<key>bio</key>
+			<string>Computer enthusiast with passion about learning how these machines work in its multiple facets.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/tomas-crespo.jpg</string>
+		</dict>
+		<key>gorka_garay</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017202</integer>
+			<key>active</key>
+			<true/>
+			<key>first</key>
+			<string>Gorka</string>
+			<key>last</key>
+			<string>Garay</string>
+			<key>twitter</key>
+			<string>gorka_garay</string>
+			<key>bio</key>
+			<string>On my forties already, Java and Groovy/Grails background all around the JVM for the last 15 years. Last 5 of them as a grails developer on product projects. Last 3 of them at Ticketbis, as a Checkouter integrating several payment methods through third-party APIs. 6 years as a father padawan, on my way to the dark side.</string>
+			<key>imageUrl</key>
+			<string>http://2017.greachconf.com/wp-content/uploads/2017/01/gorka-garay.jpg</string>
+		</dict>
+	</dict>
+	<key>rooms</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Workshops Venue</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Luchana theatre</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Party venue (TBA)</string>
+			<key>image</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string></string>
+			<key>image</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>tracks</key>
+	<array>
+		<string>Workshops Track 2</string>
+		<string>Workshops Track 1</string>
+		<string>Track 1</string>
+		<string>Track 2</string>
+	</array>
+</dict>
+</plist>

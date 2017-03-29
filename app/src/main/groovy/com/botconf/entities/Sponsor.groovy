@@ -5,5 +5,7 @@ import groovy.transform.CompileStatic
 @CompileStatic
 class Sponsor {
     String category
-    int imageRes
+    String imageUrl
+    String url
+    String name
 }

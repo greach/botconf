@@ -1,3 +1,1 @@
 include ':app'
-include 'grooid-wpapi'
-project(':grooid-wpapi').projectDir = new File(settingsDir, '../grooid-wpapi/grooid-wpapi')

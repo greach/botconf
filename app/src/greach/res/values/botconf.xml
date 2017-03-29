@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="sponsors_plist_url">http://botconf.s3.amazonaws.com/greach/sponsors.plist</string>
+    <string name="botconf_plist_url">http://botconf.s3.amazonaws.com/greach/botconf.plist</string>
     <string name="botconf_wordpress_url">http://greach.botconf.com</string>
     <string name="botconf_date_format">dd/MM/yyyy HH:mm</string>
     <string name="botconf_compact_date_format">dd/MM/yyyy</string>

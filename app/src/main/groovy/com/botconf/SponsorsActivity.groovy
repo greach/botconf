@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.botconf.android.adapters.SponsorsAdapter
 import com.botconf.android.adapters.TalkAdapter
+import com.botconf.entities.Sponsor
 import com.botconf.entities.interfaces.ITalk
 import com.botconf.usecases.SponsorsUseCase
 import groovy.transform.CompileStatic
@@ -27,7 +28,7 @@ class SponsorsActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView)findViewById(R.id.reyclerView)
 
-        sponsorsUseCase = new SponsorsUseCase()
+        sponsorsUseCase = new SponsorsUseCase(getApplicationContext())
         adapter = new SponsorsAdapter(this)
 
         final RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext())
@@ -35,7 +36,16 @@ class SponsorsActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true)
         recyclerView.setAdapter(adapter)
 
-        adapter.setSponsorsAndCategories(sponsorsUseCase.sponsorsCategories(),sponsorsUseCase.sponsors())
+        def sponsors = sponsorsUseCase.sponsors()
+        adapter.setSponsorsAndCategories(categoriesForSponsors(sponsors),sponsorsUseCase.sponsors())
+    }
+
+    static List<String> categoriesForSponsors(List<Sponsor> sponsors) {
+        List<String> categories = sponsors.collect { it.category }.unique()
+        categories = categories.sort { a, b ->
+            SponsorsUseCase.sponsorInt(b) <=> SponsorsUseCase.sponsorInt(a)
+        }
+        categories
     }
 
 }
