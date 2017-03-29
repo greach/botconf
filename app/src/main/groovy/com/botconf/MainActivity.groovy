@@ -297,7 +297,7 @@ class MainActivity extends AppCompatActivity implements TraitGoogleAnalytics, Tr
             openSponsorsActivity()
 
         } else if (id == R.id.action_feedback) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://bit.ly/greach2016-feedback"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://bit.ly/greach2017-feedback"));
             startActivity(browserIntent);
         } else if (id == R.id.action_followus) {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/greachconf"));
