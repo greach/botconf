@@ -52,8 +52,8 @@ android {
     productFlavors {
         greach {
             applicationId "com.botconf.greach"
-            versionName "1.0.3-greach"
-            versionCode 6
+            versionName "1.0.5-greach"
+            versionCode 8
             ext.enableCrashlytics = false
         }
 

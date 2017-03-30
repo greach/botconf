@@ -32,12 +32,15 @@ class RemoteRepositoryUseCase implements IRemoteRepository {
         return ctx.getResources().openRawResource(R.raw.botconf);
     }
 
+    InputStream onlinePlistInputStream() {
+        URL url = new URL(getBaseUrlStr())
+        url.openStream()
+    }
+
     void loadConferenceData(Closure closure) {
-
         try {
-            InputStream is = botconfInputStream()
-            NSDictionary rootDict = (NSDictionary)PropertyListParser.parse(is)
-
+            byte[] bytes = getBaseUrlStr().toURL().bytes
+            NSDictionary rootDict = (NSDictionary)PropertyListParser.parse(bytes)
 
             List<IConference> conferences = new ArrayList<>()
             conferences << new ConferenceAdapter(name: 'Greach 2017', primaryKey: 2017000l)

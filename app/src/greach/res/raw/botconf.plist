@@ -5,14 +5,14 @@
 	<key>metadata</key>
 	<dict>
 		<key>lastUpdated</key>
-		<date>2017-03-29T06:59:15Z</date>
+		<date>2017-03-29T14:48:17Z</date>
 	</dict>
 	<key>sessions</key>
 	<dict>
 		<key>excel-in-groovy</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017127</integer>
+			<integer>2017130</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -46,7 +46,7 @@
 		<key>building-a-microservice-federation-with-grails-3-and-spring-cloud</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017128</integer>
+			<integer>2017131</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -85,7 +85,7 @@ A Git URL will be provided to download the workshop materials, but I’ll also h
 		<key>lunch-2</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017129</integer>
+			<integer>2017132</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -113,7 +113,7 @@ A Git URL will be provided to download the workshop materials, but I’ll also h
 		<key>your-very-first-macro-method</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017130</integer>
+			<integer>2017133</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -150,7 +150,7 @@ Requirements
 		<key>testing-grails-3-the-good-unit-the-bad-integration-and-the-ugly-functional</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017131</integer>
+			<integer>2017134</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -186,7 +186,7 @@ Requirements
 		<key>gradle-plugin-writing-workshop</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017132</integer>
+			<integer>2017135</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -221,7 +221,7 @@ Requirements
 		<key>jenkins-pipelines-as-code-with-job-dsl</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017133</integer>
+			<integer>2017136</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -258,7 +258,7 @@ Requirements
 		<key>registration</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017134</integer>
+			<integer>2017137</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -286,7 +286,7 @@ Requirements
 		<key>welcome-to-greach-2017</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017135</integer>
+			<integer>2017138</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -314,7 +314,7 @@ Requirements
 		<key>keynote</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017136</integer>
+			<integer>2017139</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -343,7 +343,7 @@ Requirements
 		<key>make-concurrency-groovy-again</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017137</integer>
+			<integer>2017140</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -374,7 +374,7 @@ In this talk I’ll try to ground some of the possible flavors of concurrency th
 		<key>a-test-driven-approaches-to-documenting-restful-apis-with-groovy-and-spring-rest-docs</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017138</integer>
+			<integer>2017141</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -405,7 +405,7 @@ Test-driven documentation solutions, such as Spring Rest Docs, generate example 
 		<key>coffee-break</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017139</integer>
+			<integer>2017142</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -433,7 +433,7 @@ Test-driven documentation solutions, such as Spring Rest Docs, generate example 
 		<key>javaslang-groovy-the-best-of-both-worlds</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017140</integer>
+			<integer>2017143</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -464,7 +464,7 @@ In this talk you’ll learn how you can improve your code using Javaslang and Gr
 		<key>grails-interview-questions</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017141</integer>
+			<integer>2017144</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -496,7 +496,7 @@ Wether you are an experienced Grails developer or a beginner this talk gives you
 		<key>back-from-the-dead-http-builder-ng</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017142</integer>
+			<integer>2017145</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -526,7 +526,7 @@ Wether you are an experienced Grails developer or a beginner this talk gives you
 		<key>monitoring-and-metrics-with-grails-3</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017143</integer>
+			<integer>2017146</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -556,7 +556,7 @@ Wether you are an experienced Grails developer or a beginner this talk gives you
 		<key>lunch</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017144</integer>
+			<integer>2017147</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -584,7 +584,7 @@ Wether you are an experienced Grails developer or a beginner this talk gives you
 		<key>hasmany-considered-harmful</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017145</integer>
+			<integer>2017148</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -614,7 +614,7 @@ Wether you are an experienced Grails developer or a beginner this talk gives you
 		<key>whats-new-in-groovy-2-5</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017146</integer>
+			<integer>2017149</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -644,7 +644,7 @@ Wether you are an experienced Grails developer or a beginner this talk gives you
 		<key>graphql-development-with-groovy</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017147</integer>
+			<integer>2017150</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -675,7 +675,7 @@ GraphQL is a query language for your API, and a server-side runtime for executin
 		<key>making-the-most-of-your-gradle-build</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017148</integer>
+			<integer>2017151</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -705,7 +705,7 @@ GraphQL is a query language for your API, and a server-side runtime for executin
 		<key>coffee-break-2</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017149</integer>
+			<integer>2017152</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -733,7 +733,7 @@ GraphQL is a query language for your API, and a server-side runtime for executin
 		<key>groovy-integration-testing-with-spock-and-docker</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017150</integer>
+			<integer>2017153</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -766,7 +766,7 @@ Attendees should have basic knowledge about Spock and Docker.
 		<key>gorm-61</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017151</integer>
+			<integer>2017154</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -795,7 +795,7 @@ Attendees should have basic knowledge about Spock and Docker.
 		<key>groovy-puzzlers-4-the-bytecode-bites-back</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017152</integer>
+			<integer>2017155</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -826,7 +826,7 @@ Attendees should have basic knowledge about Spock and Docker.
 		<key>breakfast</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017153</integer>
+			<integer>2017156</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -854,7 +854,7 @@ Attendees should have basic knowledge about Spock and Docker.
 		<key>stuck-on-jenkins-or-high-on-pipeline</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017154</integer>
+			<integer>2017157</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -886,7 +886,7 @@ In the process, the pipeline used for a development pipeline will be demoed, wit
 		<key>masters-of-groovy-challenge</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017155</integer>
+			<integer>2017158</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -916,7 +916,7 @@ In the process, the pipeline used for a development pipeline will be demoed, wit
 		<key>alexa-tell-me-im-groovy</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017156</integer>
+			<integer>2017159</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -947,7 +947,7 @@ I’m sure if you don’t already have one you’ll be hacking away as soon as y
 		<key>what-do-the-spring-clouds-smell-like</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017157</integer>
+			<integer>2017160</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -978,7 +978,7 @@ This session explains the different components of the Spring Cloud ecosystem, an
 		<key>grails-keynote</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017158</integer>
+			<integer>2017161</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1007,7 +1007,7 @@ This session explains the different components of the Spring Cloud ecosystem, an
 		<key>coffee-break-3</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017159</integer>
+			<integer>2017162</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1035,7 +1035,7 @@ This session explains the different components of the Spring Cloud ecosystem, an
 		<key>geb-best-practices</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017160</integer>
+			<integer>2017163</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1065,7 +1065,7 @@ This session explains the different components of the Spring Cloud ecosystem, an
 		<key>polyglot-web-development-with-grails-3</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017161</integer>
+			<integer>2017164</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1095,7 +1095,7 @@ This session explains the different components of the Spring Cloud ecosystem, an
 		<key>mastering-async-in-ratpack</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017162</integer>
+			<integer>2017165</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1127,7 +1127,7 @@ By the end of this talk you’ll feel like Neo from the Matrix.
 		<key>groovyfx-groove-javafx</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017163</integer>
+			<integer>2017166</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1159,7 +1159,7 @@ This session compares JavaFX and GroovyFX and shows how easy JavaFX development 
 		<key>lunch-3</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017164</integer>
+			<integer>2017167</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1187,7 +1187,7 @@ This session compares JavaFX and GroovyFX and shows how easy JavaFX development 
 		<key>the-road-from-java-to-groovy</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017165</integer>
+			<integer>2017168</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1219,7 +1219,7 @@ Topics to be covered include: Cruising I-95: Interop Highway Caution: Sharp keyw
 		<key>grails-angular-unleashing-the-dynamic-duo-lightning-talk</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017166</integer>
+			<integer>2017169</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1250,7 +1250,7 @@ In this speech, we will review the relevant concepts and tools that we need in o
 		<key>groovy-for-system-scripting-lightning-talk</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017167</integer>
+			<integer>2017170</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1278,10 +1278,41 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 			<key>roomId</key>
 			<integer>1</integer>
 		</dict>
+		<key>the-calm-after-the-storm</key>
+		<dict>
+			<key>primaryKey</key>
+			<integer>2017171</integer>
+			<key>active</key>
+			<true/>
+			<key>date</key>
+			<date>2017-04-01T13:00:00Z</date>
+			<key>duration</key>
+			<integer>15</integer>
+			<key>trackId</key>
+			<integer>2</integer>
+			<key>column</key>
+			<integer>1</integer>
+			<key>sessionNumber</key>
+			<data>
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACl1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+			</data>
+			<key>title</key>
+			<string>The calm after the Storm (lightning-talk)</string>
+			<key>sessionDescription</key>
+			<string>How do you integrate 5 third party payment methods integrators’ API for more than 20 different local payment methods to support up to 50.000 transactions per month over 50+ countries?
+Having started from a monolithic application, we have refactored the third-party payment method integrations to be isolated as different payment engines. Now we have moved this isolated code to a grails plugin so it could be shared by the monolithic application and the brand new payments microservice: Storm. After having stabilized the microservice by using the old code of the plugin (storm-core) as a fallback, we will start using this brand new microservice as an external payment sollution for the now-less-monolithic application, and possibly for our new partner StubHub.
+</string>
+			<key>presenters</key>
+			<array>
+				<string>gorka_garay</string>
+			</array>
+			<key>roomId</key>
+			<integer>1</integer>
+		</dict>
 		<key>closure-raffle</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017168</integer>
+			<integer>2017172</integer>
 			<key>active</key>
 			<true/>
 			<key>date</key>
@@ -1294,7 +1325,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 			<integer>1</integer>
 			<key>sessionNumber</key>
 			<data>
-				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACl1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
+				rO0ABXNyACdvcmcuY29kZWhhdXMuZ3Jvb3Z5LnJ1bnRpbWUuR1N0cmluZ0ltcGwxs0tn+33pEgIAAVsAB3N0cmluZ3N0ABNbTGphdmEvbGFuZy9TdHJpbmc7eHIAE2dyb292eS5sYW5nLkdTdHJpbmfbY952kMsIzQIAAVsABnZhbHVlc3QAE1tMamF2YS9sYW5nL09iamVjdDt4cHVyABNbTGphdmEubGFuZy5PYmplY3Q7kM5YnxBzKWwCAAB4cAAAAAJ0AAdUcmFjayAyc3IAEWphdmEubGFuZy5JbnRlZ2VyEuKgpPeBhzgCAAFJAAV2YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAACp1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAADdAAAdAABLXEAfgAN
 			</data>
 			<key>title</key>
 			<string><![CDATA[Closure & Raffle]]></string>
@@ -1312,7 +1343,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>musketyr</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017169</integer>
+			<integer>2017173</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1329,7 +1360,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>jackfrosch</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017199</integer>
+			<integer>2017203</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1346,7 +1377,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>bsideup</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017171</integer>
+			<integer>2017175</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1363,7 +1394,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>alberto_deavila</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017172</integer>
+			<integer>2017176</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1380,7 +1411,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>ysb33r</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017173</integer>
+			<integer>2017177</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1397,7 +1428,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>kszdev</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017174</integer>
+			<integer>2017178</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1414,7 +1445,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>burtbeckwith</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017182</integer>
+			<integer>2017186</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1431,7 +1462,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>alotor</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017176</integer>
+			<integer>2017180</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1448,7 +1479,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>codeJENNerator</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017177</integer>
+			<integer>2017181</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1465,7 +1496,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>ilopmar</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017178</integer>
+			<integer>2017182</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1482,7 +1513,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>sdelamo</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017179</integer>
+			<integer>2017183</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1499,7 +1530,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>NoamTenne</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017188</integer>
+			<integer>2017192</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1516,7 +1547,7 @@ Learn how to use external programs with the Groovy syntax, add useful dependenci
 		<key>jeffscottbrown</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017196</integer>
+			<integer>2017200</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1538,7 +1569,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>JochenTheodorou</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017183</integer>
+			<integer>2017187</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1555,7 +1586,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>marioggar</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017184</integer>
+			<integer>2017188</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1572,7 +1603,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>aalmiray</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017185</integer>
+			<integer>2017189</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1589,7 +1620,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>Kiview</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017186</integer>
+			<integer>2017190</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1606,7 +1637,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>graemerocher</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017194</integer>
+			<integer>2017198</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1623,7 +1654,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>el_groovyssimo</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017189</integer>
+			<integer>2017193</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1640,7 +1671,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>JacobAae</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017190</integer>
+			<integer>2017194</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1657,7 +1688,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>koenusTweets</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017191</integer>
+			<integer>2017195</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1674,7 +1705,7 @@ speaker on Grails, Groovy and other JVM related technologies.</string>
 		<key>RyanVanderwerf</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017192</integer>
+			<integer>2017196</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1694,7 +1725,7 @@ TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
 		<key>alvaro_sanchez</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017193</integer>
+			<integer>2017197</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1711,7 +1742,7 @@ TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
 		<key>marcinerdmann</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017195</integer>
+			<integer>2017199</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1728,7 +1759,7 @@ TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
 		<key>Lspacewalker</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017197</integer>
+			<integer>2017201</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1745,7 +1776,7 @@ TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
 		<key>saschaklein</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017198</integer>
+			<integer>2017202</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1762,7 +1793,7 @@ TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
 		<key>Ruuben4</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017200</integer>
+			<integer>2017204</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1779,7 +1810,7 @@ TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
 		<key>TomasCrespo</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017201</integer>
+			<integer>2017205</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1796,7 +1827,7 @@ TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
 		<key>gorka_garay</key>
 		<dict>
 			<key>primaryKey</key>
-			<integer>2017202</integer>
+			<integer>2017206</integer>
 			<key>active</key>
 			<true/>
 			<key>first</key>
@@ -1828,12 +1859,6 @@ TX. Co author of “Effective Gradle Implementation” Aug 2014.</string>
 		<dict>
 			<key>name</key>
 			<string>Party venue (TBA)</string>
-			<key>image</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string></string>
 			<key>image</key>
 			<string></string>
 		</dict>
