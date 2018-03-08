@@ -23,12 +23,15 @@ class SponsorsUseCase {
 
     static int sponsorInt(String kind) {
         if ( kind.compareToIgnoreCase('Diamond') == 0 ) {
-            return 5
+            return 6
 
         } else if ( kind.compareToIgnoreCase('Platinum') == 0 ) {
-            return 4
+            return 5
 
         } else if ( kind.compareToIgnoreCase('Gold') == 0 ) {
+            return 4
+
+        } else if ( kind.compareToIgnoreCase('Silver') == 0 ) {
             return 3
 
         } else if ( kind.compareToIgnoreCase('Bronze') == 0 ) {
