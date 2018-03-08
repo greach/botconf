@@ -32,5 +32,9 @@
             android:name=".AgendaFilterActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2cd5889ffe5ce70ebba419ebc503ff099c463243"
+            />
     </application>
 </manifest>
