@@ -20,13 +20,12 @@ class LocalRepositoryUseCase {
         dataSource.findAllTalkCards().findAll { aWeekAgoDate.before(it.start) }
     }
 
-    @CompileStatic(TypeCheckingMode.SKIP)
     Date aWeekAgo() {
-        def currentDate = new Date()
-        use( TimeCategory ) {
-            currentDate = currentDate - 1.week
-        }
-        currentDate
+        int noOfDays = -7
+        Calendar calendar = Calendar.getInstance()
+        calendar.setTime(new Date())
+        calendar.add(Calendar.DAY_OF_YEAR, noOfDays)
+        calendar.getTime()
     }
 
     LocalRepositoryUseCase(Context ctx) {

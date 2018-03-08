@@ -108,12 +108,13 @@ class RemoteRepositoryUseCase implements IRemoteRepository {
             ex.printStackTrace()
         }
     }
-    @CompileStatic(TypeCheckingMode.SKIP)
+
     Date endDate(NSDate startDate, int duration) {
         Date endDate = startDate.date
-        use(TimeCategory) {
-            endDate += duration.minute
-        }
-        endDate
+
+        Calendar calendar = Calendar.getInstance()
+        calendar.setTime(endDate)
+        calendar.add(Calendar.MINUTE, duration)
+        calendar.getTime()
     }
 }

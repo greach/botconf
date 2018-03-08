@@ -25,22 +25,21 @@ class AgendaSessionTimeHeader implements IAgendaSession {
         sessionDate.format(format)
     }
 
-    @CompileStatic(TypeCheckingMode.SKIP)
+
     Date nineHoursAgo() {
-        def currentDate = new Date()
-        use( TimeCategory ) {
-            currentDate = currentDate - 9.hours
-        }
-        currentDate
+        int noOfDays = -9
+        Calendar calendar = Calendar.getInstance()
+        calendar.setTime(new Date())
+        calendar.add(Calendar.HOUR, noOfDays)
+        calendar.getTime()
     }
 
-    @CompileStatic(TypeCheckingMode.SKIP)
     Date aWeekFromNow() {
-        def currentDate = new Date()
-        use( TimeCategory ) {
-            currentDate = currentDate + 1.week
-        }
-        currentDate
+        int noOfDays = 7
+        Calendar calendar = Calendar.getInstance()
+        calendar.setTime(new Date())
+        calendar.add(Calendar.DAY_OF_YEAR, noOfDays)
+        calendar.getTime()
     }
 
 }

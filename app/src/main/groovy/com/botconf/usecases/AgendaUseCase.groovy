@@ -42,15 +42,15 @@ class AgendaUseCase {
         }
 
         agenda
+
     }
 
-    @CompileStatic(TypeCheckingMode.SKIP)
+
     Date agendaAnchorDate() {
-        def currentDate = new Date()
-        use( TimeCategory ) {
-            currentDate = currentDate - 9.hours
-        }
-        currentDate
+        Calendar calendar = Calendar.getInstance()
+        calendar.setTime(new Date())
+        calendar.add(Calendar.HOUR, -9)
+        calendar.getTime()
     }
 
     List<IAgendaSession> buildAgenda(List<ITalkCard> talks) {
