@@ -8,39 +8,31 @@
 		<key>url</key>
 		<string>http://www.objectcomputing.com</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2016/10/OCI.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2016/10/OCI-1.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
-		<string>Platinum</string>
+		<string>Gold</string>
 		<key>url</key>
 		<string>https://www.salenda.es/</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2016/10/Salenda_10Years.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2016/10/Salenda_10Years.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
-		<string>Platinum</string>
-		<key>url</key>
-		<string>https://infortelecom.es/en</string>
-		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2016/10/Infortelecom.png</string>
-	</dict>
-	<dict>
-		<key>kind</key>
-		<string>Gold</string>
+		<string>Silver</string>
 		<key>url</key>
 		<string>http://osoco.es/</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/osoco.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2014/01/osoco.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
-		<string>Gold</string>
+		<string>Bronze</string>
 		<key>url</key>
-		<string>https://www.autentia.com/</string>
+		<string>https://twitter.com/emfanitek</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/autentia.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2017/10/Emfanitek.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
@@ -48,31 +40,15 @@
 		<key>url</key>
 		<string>http://www.virtualsw.com/</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/virtual.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2014/01/virtual.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
-		<string>Bronze</string>
-		<key>url</key>
-		<string>http://www.grupoaluman.com/</string>
-		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/aluman.png</string>
-	</dict>
-	<dict>
-		<key>kind</key>
-		<string>Bronze</string>
-		<key>url</key>
-		<string>https://www.energizedwork.com/</string>
-		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2017/01/energized-word.png</string>
-	</dict>
-	<dict>
-		<key>kind</key>
-		<string>Bronze</string>
+		<string>Silver</string>
 		<key>url</key>
 		<string>http://kaleidos.net/</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/kaleidos.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2014/01/kaleidos.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
@@ -80,31 +56,23 @@
 		<key>url</key>
 		<string>http://www.diputaciodetarragona.cat</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/diputacio-tarragona.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2014/01/diputacio-tarragona.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
 		<string>Bronze</string>
 		<key>url</key>
-		<string>http://www.pronoide.com/</string>
+		<string>http://www.grupoaluman.com/</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/pronoide-logo.png</string>
-	</dict>
-	<dict>
-		<key>kind</key>
-		<string>Bronze</string>
-		<key>url</key>
-		<string>https://www.koliseo.com/</string>
-		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2016/10/Koliseo.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2014/01/aluman.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
 		<string>Collaborators</string>
 		<key>url</key>
-		<string>https://zeroturnaround.com/</string>
+		<string>https://www.koliseo.com/</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2017/03/zeroturnaround.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2016/10/Koliseo.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
@@ -112,7 +80,7 @@
 		<key>url</key>
 		<string>http://groovycalamari.com/</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2017/01/groovy-calamari.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2017/01/groovy-calamari.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
@@ -120,7 +88,7 @@
 		<key>url</key>
 		<string>https://www.jetbrains.com/</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/jetbrains.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2014/01/jetbrains.png</string>
 	</dict>
 	<dict>
 		<key>kind</key>
@@ -128,7 +96,7 @@
 		<key>url</key>
 		<string>http://www.madridgug.com</string>
 		<key>image_url</key>
-		<string>http://2017.greachconf.com/wp-content/uploads/2014/01/madrid-gug.png</string>
+		<string>http://2018.greachconf.com/wp-content/uploads/2014/01/madrid-gug.png</string>
 	</dict>
 </array>
 </plist>
